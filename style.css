@@ -68,24 +68,88 @@ body{
 
 /* Product - Images Cards */
 
+article{
+    padding: 30px 20px 0;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    padding: 60px 20px 0;
+    width: calc(100% - 40px);
+}
+
+products{
+	-webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+	-webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    border: 0 solid #000;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.gallery{
+	flex-direction: column; 
+	padding-bottom: 0px; 
+	padding-top: 0px;
+}
+
+.gallery-row{
+	-webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.gallery-item{
+	-webkit-box-flex: 1;
+    -webkit-flex: 1 0 0%;
+    -ms-flex: 1 0 0%;
+    flex: 1 0 0%;
+    display: block;
+    position: relative;
+    width: 100%;
+    margin-right: 28px;
+}
 
 #f1_container {
   position: relative;
   margin: 10px auto;
-  width: 450px;
-  height: 281px;
+  width: 1000PX;
+	display: flex;
+  height: 283px;
   z-index: 1;
 }
 #f1_container {
   perspective: 1000;
 }
-#f1_card {
+#f1_card , #f2_card, #f3_card  {
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
   transition: all 1.0s linear;
 }
-#f1_container:hover #f1_card {
+ #f1_card:hover,
+ #f2_card:hover,
+#f3_card:hover{
   transform: rotateY(180deg);
   box-shadow: -5px 5px 5px #aaa;
 }
@@ -94,6 +158,7 @@ body{
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
+	overflow: hidden;
 }
 .face.back {
   display: block;
@@ -103,4 +168,8 @@ body{
   color: white;
   text-align: center;
   background-color: #aaa;
+}
+
+article img{
+	max-width: 340px;
 }
