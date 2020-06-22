@@ -127,19 +127,19 @@ products{
     display: block;
     position: relative;
     width: 100%;
-    margin: 0 14px;
+    margin: 14px;
 }
 
 .cards_container {
   position: relative;
- margin: 28px auto;
+  margin: 40px auto;
   width: 1000PX;
 	display: flex;
   height: 283px;
   z-index: 1;
 }
 
-#f1_card, #f2_card, #f3_card, #f4_card, #f5_card, #f6_card {
+#f1_card, #f2_card, #f3_card, #f4_card, #f5_card, #f6_card, #f7_card, #f8_card, #f9_card, #f10_card, #f11_card, #f12_card, #f13_card, #f14_card, #f15_card{
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
