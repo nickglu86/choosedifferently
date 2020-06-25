@@ -1,29 +1,28 @@
 <!DOCTYPE html>
 <html>
     <head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;1,300&display=swap" rel="stylesheet">	
 		<link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-		<header>
+		<header class="header">
 			<div class="logo-wrapper">
 				<div class="logo">
 					<span class="choose">Choose</span> 
 					<span class="diff">Differently</span>
 				</div>
 			</div>
-			<div class="header-nav-wrapper">
-			<ul class="header-nav">
-				<li class="header-nav-item">Home</li> 
-				<li class="header-nav-item">About</li>
-				<li class="header-nav-item">Products</li>
-				<li class="header-nav-item">Recipes</li>
-				<li class="header-nav-item">Education Materials</li>
-			
-			</ul>
-			</div>
-		</header>
+			<input class="menu-btn" type="checkbox" id="menu-btn" />
+			<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+			<ul class="menu">
+				<li><a href="/">Home</a></li>
+				<li><a href="/about">About</a></li>
+				<li><a href="/products">Products</a></li>
+				<li><a href="/recieps">Recipes</a></li>
+				<li><a href="/resources">Resources</a></li>
+			 </ul>
+		 </header>
 		<div class="container">
         </div>
     </body>

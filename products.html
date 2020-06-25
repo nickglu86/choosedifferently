@@ -1,33 +1,28 @@
 <!DOCTYPE html>
 <html>
    <head>
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
       <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
-	  <link rel="stylesheet" type="text/css" href="style.css">
-	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  	  <link rel="stylesheet" type="text/css" href="style1.css">
    </head>
    <body>
-      <header>
-         <div class="logo-wrapper">
-            <div class="logo">
-               <span class="choose">Choose</span> 
-               <span class="diff">Differently</span>
-            </div>
-         </div>
-         <div class="header-nav-wrapper">
-            <div id="header-nav">
-               <a href="" class="header-nav-item">Home</a>
-               <a href="" class="header-nav-item">About</a>
-               <a href="" class="header-nav-item">Products</a>
-               <a href="" class="header-nav-item">Recipes</a>
-               <a href="" class="header-nav-item">Resources</a>
+	<header class="header">
+		<div class="logo-wrapper">
+			<div class="logo">
+				<span class="choose">Choose</span> 
+				<span class="diff">Differently</span>
 			</div>
-			<a href="javascript:void(0);" class="icon" onclick="navBehaviour()">
-				<i class="fa fa-bars"></i>
-			  </a>
-         </div>
-      </header>
+		</div>
+		<input class="menu-btn" type="checkbox" id="menu-btn" />
+		<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+		<ul class="menu">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/products">Products</a></li>
+            <li><a href="/recieps">Recipes</a></li>
+            <li><a href="/resources">Resources</a></li>
+         </ul>
+	 </header>
       <div class="container">
       <article>
             <div class="products-gallery">
@@ -229,17 +224,6 @@
 				</div>
             </div>
       </article>
-	  </div>
-	  <script>
-		function navBehaviour() {
-		  var x = document.getElementById("header-nav");
-		  if (x.style.display === "block") {
-			x.style.display = "none";
-		  } else {
-			x.style.display = "block";
-		  }
-		}
-		</script>
+      </div>
    </body>
-   
 </html>
