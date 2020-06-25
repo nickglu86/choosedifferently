@@ -3,7 +3,9 @@
    <head>
       <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
-      <link rel="stylesheet" type="text/css" href="style.css">
+	  <link rel="stylesheet" type="text/css" href="style.css">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
    </head>
    <body>
       <header>
@@ -14,13 +16,16 @@
             </div>
          </div>
          <div class="header-nav-wrapper">
-            <ul class="header-nav">
-               <li class="header-nav-item">Home</li>
-               <li class="header-nav-item">About</li>
-               <li class="header-nav-item">Products</li>
-               <li class="header-nav-item">Recipes</li>
-               <li class="header-nav-item">Resources</li>
-            </ul>
+            <div id="header-nav">
+               <a href="" class="header-nav-item">Home</a>
+               <a href="" class="header-nav-item">About</a>
+               <a href="" class="header-nav-item">Products</a>
+               <a href="" class="header-nav-item">Recipes</a>
+               <a href="" class="header-nav-item">Resources</a>
+			</div>
+			<a href="javascript:void(0);" class="icon" onclick="navBehaviour()">
+				<i class="fa fa-bars"></i>
+			  </a>
          </div>
       </header>
       <div class="container">
@@ -224,6 +229,17 @@
 				</div>
             </div>
       </article>
-      </div>
+	  </div>
+	  <script>
+		function navBehaviour() {
+		  var x = document.getElementById("header-nav");
+		  if (x.style.display === "block") {
+			x.style.display = "none";
+		  } else {
+			x.style.display = "block";
+		  }
+		}
+		</script>
    </body>
+   
 </html>
