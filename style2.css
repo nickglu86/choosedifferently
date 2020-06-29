@@ -74,6 +74,36 @@ a {
 	background-color: #f4f4f4;
 }
 
+.header li.social-ref{
+    text-align: center;
+    border-top: 1px solid #7899c326;
+    padding: 22px 0;
+}
+.header li.social-ref a{
+    border: none; 
+    display: inline-block;
+    padding: 0 4px;
+}
+.header li.social-ref a span{
+    display: inline-block;
+    height: 32px;
+    width:  32px;
+}
+
+.facebook-icon, .instagram-icon, .email-icon{
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.facebook-icon{
+    background-image: url('imgs/facebook-icon.png');
+}
+.instagram-icon{
+    background-image: url('imgs/instagram-icon.png');
+}
+.email-icon{
+    background-image: url('imgs/email-icon.png');
+}
+
 .header .logo {
 	display: block;
 	float: left;
@@ -139,7 +169,7 @@ a {
 }
 
 .header .menu-btn:checked~.menu {
-	max-height: 370px;
+	max-height: 440px;
 }
 
 .header .menu-btn:checked~.menu-icon .navicon {
@@ -382,7 +412,9 @@ article.about-page {
         margin: 15px 0 10px;
         flex-direction: column;
     }
-
+    .social-ref{
+        display: none;
+    }
 
     article{
         padding: 30px 5px 0;
