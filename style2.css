@@ -203,7 +203,7 @@ article{
 
 /* Product - Images Cards */
 
-.products-gallery{
+.products-gallery, .resources-gallery{
 	/* flex-direction: column; */
 	/* padding-bottom: 0px; */
 	/* padding-top: 0px; */
@@ -428,7 +428,7 @@ article.about-page {
         border-top: 1px solid #2196f361;
     }
 
-    .products-gallery, article{
+    .products-gallery{
         width: 1000px;
     }
     .products-gallery{
@@ -477,7 +477,7 @@ article.about-page {
          font-size: 0.9em;
     }
     /* Test */
-    .products-gallery{
+    .products-gallery, .resources-gallery{
         width: 80vw;
     }
     .gallery-item {
@@ -491,4 +491,75 @@ article.about-page {
     article .product-img {
         height: 80vw;
     }
+}
+
+
+/** Resources Page **/
+.resources-gallery .gallery-item{
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	margin: 10% 0;
+}
+.movie-icon{
+	display: inline-block;
+	margin: 0 0.5vw;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 7vw;
+    width: 7vw;
+}
+
+.movie-icon.netflix{
+	background-image: url("imgs/netflix-icon.png")
+}
+.movie-icon.youtube{
+	background-image: url("imgs/youtube-icon.png")
+}
+.movie-icon.amazon{
+	background-image: url("imgs/amazon-icon.jpg")
+}
+.movie-icon.itunes{
+	background-image: url("imgs/itunes-icon.png")
+}
+
+.movie-poster{
+	width: 80vw;
+}
+.movie-title{
+    text-align: center;
+    font-size: 20px;
+    line-height: 40px;
+    border-bottom: 1px solid #777474;
+    margin-bottom: 10px;
+}
+.movies-resources {
+	text-align: center;
+}
+
+@media (min-width: 48em) {
+    .resources-gallery{
+        width: 1200px;
+		margin: 10px auto 0;
+    }
+	.poster-wrapper {
+		width: 300px;
+		margin: 0 auto;
+		min-height: 460px;
+	}
+	.movie-poster{
+		width: 300px;
+		max-height: 430px;
+	}
+	.resources-gallery .gallery-item{
+		margin: 20px 26px 60px;
+	}
+	.movie-icon{
+		height: 40px;
+		width: 40px;
+	}
+	.movie-title{
+		font-size: 25px;
+	}
+	
 }
