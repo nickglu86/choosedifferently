@@ -66,12 +66,23 @@ a {
     text-decoration: none;
     text-align: center;
     font-size: 18px;
+	opacity: 0.6;
+	box-sizing: content-box;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
     
 }
 
 .header li a:hover,
 .header .menu-btn:hover {
-	background-color: #f4f4f4;
+/*
+	background-color: #b1d7fb26;
+	border-radius: 37px;
+*/
+	border-top: 1px solid #00000096;
+	border-bottom: 1px solid #00000096;
+	opacity: 1;
+	transition: 0.1s; 
 }
 
 .header li.social-ref{
@@ -506,8 +517,8 @@ article.about-page {
 	margin: 0 0.5vw;
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 7vw;
-    width: 7vw;
+	height: 9vw;
+    width: 9vw;
 }
 
 .movie-icon.netflix{
@@ -522,6 +533,18 @@ article.about-page {
 .movie-icon.itunes{
 	background-image: url("imgs/itunes-icon.png")
 }
+.movie-icon.vimeo{
+	background-image: url("imgs/vimeo-icon.png")
+}
+.movie-icon.forksoverknives{
+	background-image: url("imgs/forksoverknives-icon.jpg")
+}
+.movie-icon.whatthehealth{
+	background-image: url("imgs/whatthehealth-icon.png")
+}
+.movie-icon.fedup{
+	background-image: url("imgs/fedup-icon.jpg")
+}
 
 .movie-poster{
 	width: 80vw;
@@ -531,7 +554,8 @@ article.about-page {
     font-size: 20px;
     line-height: 40px;
     border-bottom: 1px solid #777474;
-    margin-bottom: 10px;
+	width: 75%;
+    margin: 0 auto 10px;
 }
 .movies-resources {
 	text-align: center;
