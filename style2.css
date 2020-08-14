@@ -78,9 +78,9 @@ a {
 /*
 	background-color: #b1d7fb26;
 	border-radius: 37px;
-*/
 	border-top: 1px solid #00000096;
 	border-bottom: 1px solid #00000096;
+	*/
 	opacity: 1;
 	transition: 0.1s; 
 }
@@ -545,6 +545,19 @@ article.about-page {
 .movie-icon.fedup{
 	background-image: url("imgs/fedup-icon.jpg")
 }
+.movie-icon.cowspiracy{
+	background-image: url("imgs/cowspiracy-icon.jpg")
+}
+.movie-icon.gmoomg{
+	background-image: url("imgs/gmoomg-icon.jpg")
+}
+.movie-icon.gamechangers{
+	background-image: url("imgs/gamechangers-icon.jpg")
+}
+.movie-icon.toxicbeauty{
+	background-image: url("imgs/toxicbeauty-icon.jpg")
+}
+
 
 .movie-poster{
 	width: 80vw;
