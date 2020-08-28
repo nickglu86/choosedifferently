@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="style2.css?uptodate">
+		<link rel="stylesheet" type="text/css" href="recipes2-style.css?uptodate">
+    </head>
+    <body>
+		<div id="blur">
+		<header class="header">
+			<div class="logo-wrapper">
+				<div class="logo">
+					<span class="choose">Choose</span> 
+					<span class="diff">Differently</span>
+				</div>
+			</div>
+			<input class="menu-btn" type="checkbox" id="menu-btn" />
+			<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+			<ul class="menu">
+				<li><a href="/index.html">Home</a></li>
+				<li><a href="/about.html">About</a></li>
+				<li><a href="/products.html">Products</a></li>
+				<li><a href="/recieps">Recipes</a></li>
+				<li><a href="/resources">Resources</a></li>
+				<li class="social-ref">
+					<a href="https://www.facebook.com/Choose-Differently-103493728053313"  target="_blank">
+					   <span class="facebook-icon"> </span>
+					</a>
+					<a href="">
+					   <span class="email-icon"> </span>
+					</a>
+					<a href="https://www.instagram.com/choosedifferently/"  target="_blank">
+					   <span class="instagram-icon"> </span>
+					</a>
+				 </li>
+			 </ul>
+		 </header>
+		<div class="container" >
+ 		<div class="content">
+					<div class="recipe-layout-wrapper">	<div class="recipe-layout">
+						<div class="recipe-header">
+						  	<div class="recipe-category">Pizzas</div>
+							<div class="recipe-title">Sun-Dried Timato Pizza</div>
+						</div>
+						<div class="recipe-body">
+							<div class="recipe-intro">
+								<div class="recipe-icons">
+									<div class="recipe-icon prep-time">Prep. time:<br> 15 minutes</div>
+									<div class="recipe-icon total-time">Total Time: <br> 2.5 Hours</div>
+									<div class="recipe-icon serves">Serves: <br> 8</div>
+								</div>
+								<div class="recipe-image">
+									<img src="imgs/pizza.jpg">
+								</div>
+							</div>
+							<div class="recipe-desc">
+								<div class="recipe-ingredients">
+									<h2>Ingridients:</h2>
+									<ul>
+										<li>1 tables sugar</li>
+										<li>11/4 cups of warm water</li>
+										<li>1 teastspoon salt</li>
+										<li>3  tablespoos of oil</li>
+									</ul>
+								</div>
+								<div class="recipe-diractions">
+									<h2>Directions</h2>
+													<p>Grab a Siete Tortilla or pre-bought store crust. </p>
+								<p>Wait, I can eat pizza on the paleo diet?!
+									Sure can! You just have to make sure you skip a dough with wheat and gluten and dairy (dairy-free mozzarella is surprisingly easy to find these days). But vegetables and pepperoni are totally allowed for topping.</p>
+								</div>
+				
+							</div>
+						</div>
+						<a class="show-recipe"  href="#" onclick="toggle()">Show Recipe</a>
+					</div>
+					</div>
+ 		</div>	
+        </div>
+		</div>
+				<div id="popup">
+			<div class="recipe-layout">
+				<div class="recipe-header">
+								<div class="recipe-category">Pizzas</div>
+								<div class="recipe-title">Sun-Dried Timato Pizza</div>
+	</div>
+				<div class="recipe-body">
+								<div class="recipe-intro">
+									<div class="recipe-icons">
+										<div class="recipe-icon prep-time">Prep. time:<br> 15 minutes</div>
+										<div class="recipe-icon total-time">Total Time: <br> 2.5 Hours</div>
+										<div class="recipe-icon serves">Serves: <br> 8</div>
+									</div>
+									<div class="recipe-image">
+										<img src="imgs/pizza.jpg">
+									</div>
+								</div>
+								<div class="recipe-desc">
+									<div class="recipe-ingredients">
+										<h2>Ingridients:</h2>
+										<ul>
+											<li>1 tables sugar</li>
+											<li>11/4 cups of warm water</li>
+											<li>1 teastspoon salt</li>
+											<li>3  tablespoos of oil</li>
+										</ul>
+									</div>
+									<div class="recipe-diractions">
+										<h2>Directions</h2>
+														<p>Grab a Siete Tortilla or pre-bought store crust. </p>
+									<p>Wait, I can eat pizza on the paleo diet?!
+										Sure can! You just have to make sure you skip a dough with wheat and gluten and dairy (dairy-free mozzarella is surprisingly easy to find these days). But vegetables and pepperoni are totally allowed for topping.</p>
+									</div>
+
+								</div>
+				</div>
+						<a class="show-recipe"  href="#" onclick="toggle()">Close</a>
+			</div>
+		</div>
+    </body>
+	
+	<script>
+		
+		function toggle(){
+				var blur = document.getElementById("blur");
+				blur.classList.toggle('active')
+				var popup = document.getElementById("popup");
+				popup.classList.toggle('active')
+		}
+		
+//		document.querySelectorAll('.recipe-layout').forEach(item => {
+//		  item.addEventListener('click', event => {
+//			  console.log('change bcg color');
+//			    console.log(event.currentTarget);
+//			   //event.currentTarget.style.backgroundColor = '#e5e5e5';
+//			   event.currentTarget.classList.toggle('recipe-open');
+//		  })
+//		})
+	</script>
+</html>

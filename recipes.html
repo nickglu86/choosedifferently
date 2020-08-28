@@ -4,7 +4,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="style2.css?uptodate">
-		<link rel="stylesheet" type="text/css" href="style2.css?uptodate">
+		<link rel="stylesheet" type="text/css" href="recipes-style.css?uptodate">
     </head>
     <body>
 		<header class="header">
@@ -38,26 +38,133 @@
 		<div class="container">
 			<article >
 				<div class="resources-gallery">
-					
-					<div class="recipe-layout">
+					<div class="recipe-layout-wrapper">	<div class="recipe-layout">
 						<div class="recipe-header">
 						  	<div class="recipe-category">Pizzas</div>
 							<div class="recipe-title">Sun-Dried Timato Pizza</div>
 						</div>
 						<div class="recipe-body">
 							<div class="recipe-intro">
-								<div class="recipe-icons"></div>
-								<div class="recipe-image"></div>
+								<div class="recipe-icons">
+									<div class="recipe-icon prep-time">Prep. time:<br> 15 minutes</div>
+									<div class="recipe-icon total-time">Total Time: <br> 2.5 Hours</div>
+									<div class="recipe-icon serves">Serves: <br> 8</div>
+								</div>
+								<div class="recipe-image">
+									<img src="imgs/pizza.jpg">
+								</div>
 							</div>
 							<div class="recipe-desc">
-								<div class="recipe-ingredients"></div>
-								<div class="recipe-diractions"></div>
+								<div class="recipe-ingredients">
+									<h2>Ingridients:</h2>
+									<ul>
+										<li>1 tables sugar</li>
+										<li>11/4 cups of warm water</li>
+										<li>1 teastspoon salt</li>
+										<li>3  tablespoos of oil</li>
+									</ul>
+								</div>
+								<div class="recipe-diractions">
+									<h2>Directions</h2>
+													<p>Grab a Siete Tortilla or pre-bought store crust. </p>
+								<p>Wait, I can eat pizza on the paleo diet?!
+									Sure can! You just have to make sure you skip a dough with wheat and gluten and dairy (dairy-free mozzarella is surprisingly easy to find these days). But vegetables and pepperoni are totally allowed for topping.</p>
+								</div>
+				
 							</div>
 						</div>
 					</div>
+					</div>
+					<div class="recipe-layout-wrapper">			<div class="recipe-layout">
+						<div class="recipe-header">
+						  	<div class="recipe-category">Sandwich</div>
+							<div class="recipe-title">Egg Sandwich </div>
+						</div>
+						<div class="recipe-body">
+							<div class="recipe-intro">
+								<div class="recipe-icons">
+									<div class="recipe-icon prep-time">Prep. time:<br> 15 minutes</div>
+									<div class="recipe-icon total-time">Total Time: <br> 2.5 Hours</div>
+									<div class="recipe-icon serves">Serves: <br> 8</div>
+								</div>
+								<div class="recipe-image">
+									<img src="imgs/sandwich.JPG">
+								</div>
+							</div>
+							<div class="recipe-desc">
+								<div class="recipe-ingredients">
+									<h2>Ingridients:</h2>
+									<ul>
+										<li>1 tables sugar</li>
+										<li>11/4 cups of warm water</li>
+										<li>1 teastspoon salt</li>
+										<li>3  tablespoos of oil</li>
+									</ul>
+								</div>
+								<div class="recipe-diractions">
+									<h2>Directions</h2>
+													<p>Grab a Siete Tortilla or pre-bought store crust. </p>
+								<p>Wait, I can eat pizza on the paleo diet?!
+									Sure can! You just have to make sure you skip a dough with wheat and gluten and dairy (dairy-free mozzarella is surprisingly easy to find these days). But vegetables and pepperoni are totally allowed for topping.</p>
+								</div>
+				
+							</div>
+						</div>
+					</div></div>
+					<div class="recipe-layout-wrapper">	<div class="recipe-layout">
+						<div class="recipe-header">
+						  	<div class="recipe-category">Cookies</div>
+							<div class="recipe-title">Peanut butter Banana Bread Cookies</div>
+						</div>
+						<div class="recipe-body">
+							<div class="recipe-intro">
+								<div class="recipe-icons">
+									<div class="recipe-icon prep-time">Prep. time:<br> 15 minutes</div>
+									<div class="recipe-icon total-time">Total Time: <br> 2.5 Hours</div>
+									<div class="recipe-icon serves">Serves: <br> 8</div>
+								</div>
+								<div class="recipe-image">
+									<img src="imgs/cookies.JPG">
+								</div>
+							</div>
+							<div class="recipe-desc">
+								<div class="recipe-ingredients">
+									<h2>Ingridients:</h2>
+									<ul>
+										<li>1 tables sugar</li>
+										<li>11/4 cups of warm water</li>
+										<li>1 teastspoon salt</li>
+										<li>3  tablespoos of oil</li>
+									</ul>
+								</div>
+								<div class="recipe-diractions">
+									<h2>Directions</h2>
+													<p>Grab a Siete Tortilla or pre-bought store crust. </p>
+								<p>Wait, I can eat pizza on the paleo diet?!
+									Sure can! You just have to make sure you skip a dough with wheat and gluten and dairy (dairy-free mozzarella is surprisingly easy to find these days). But vegetables and pepperoni are totally allowed for topping.</p>
+								</div>
+				
+							</div>
+						</div>
+					</div>
+					</div>
+				
+		
+				
+	
 				</div>
 			</article>
 			
         </div>
     </body>
+	<script>
+		document.querySelectorAll('.recipe-layout').forEach(item => {
+		  item.addEventListener('click', event => {
+			  console.log('change bcg color');
+			    console.log(event.currentTarget);
+			   //event.currentTarget.style.backgroundColor = '#e5e5e5';
+			   event.currentTarget.classList.toggle('recipe-open');
+		  })
+		})
+	</script>
 </html>
