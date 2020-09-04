@@ -185,3 +185,45 @@
 #popup .recipe-image{
 	    max-height: 250px;
 }
+
+/* Mobile Design */
+@media (max-width: 48em) {
+	#popup.active{
+		position: relative;
+		top: auto;
+		width: 90%;
+		padding: 30px 7px 20px;
+	}
+	.recipe-layout {
+		width: auto;
+	}
+	.recipe-intro{
+		flex-direction: column;
+		/* flex-direction: column-reverse; */
+	}
+	#popup.active .recipe-title{
+		width: auto;
+		font-size: 29px;
+		line-height: 40px;
+		padding: 10px 0;
+		min-width: 300px;
+	}
+	.recipe-desc{
+		flex-direction: column;
+		padding: 20px;
+	}
+	.recipe-intro{
+		align-items: center;
+	}
+	.recipe-icons{
+		width: 90%;
+   		 margin: 0;
+	}
+	#popup.active .recipe-image {
+		width: 90%;
+	}
+	.recipe-ingredients, .recipe-diractions{
+		width: auto;
+	}
+
+}
