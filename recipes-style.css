@@ -1,3 +1,58 @@
+.container{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	transition: 0.5s;
+}
+.container .content{
+	position: relative;
+	max-width: 800px;
+}
+
+.show-recipe{
+	position: relative;
+    padding: 10px 25px;
+    display: block;
+    width: 120px;
+    font-size: 18px;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #fff;
+    background: #acdbe3;
+    text-align: center;
+}
+
+#blur.active{
+	filter: blur(20px);
+	pointer-events: none;
+	user-select: none;
+	overflow-y: hidden;	
+}
+
+#popup{
+	position: fixed;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 600px;
+	padding: 50px;
+	box-shadow: 0 5px 30px rgb(0,0,0,.30);
+	background: #fff;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.5s;
+}
+#popup.active{
+	visibility: visible;
+	opacity: 1;
+	transition: 0.5s;
+	top: 50%
+}
+
+
 .recipe-layout{
 	display: flex;
 	flex-direction: column;
@@ -89,28 +144,44 @@
     width: 70%;
 }
 
-.recipe-icons{
-	display:none;
+.recipe-layout h4{
+	margin: 0;
 }
-.recipe-desc{
+
+
+/* Recipe Preview */
+.recipe-preview{
+	width: 300px;
+    margin: 30px 50px;
+}
+.recipe-preview .recipe-category{
+	border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    font-size: 29px;	
+}
+.recipe-preview .recipe-image{
+	width: 100%;
+	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+    border-radius: 5px;
+}
+.recipe-preview .recipe-title{
+	width: 300px;
+    color: black;
+    font-size: 29px;
+}
+.recipe-preview .recipe-title.title-m{
+	font-size: 23px;
+}
+.recipe-preview .recipe-title.title-s{
+	font-size: 17px;
+}
+.recipe-preview .recipe-icons, .recipe-preview .recipe-desc{
 	display: none;
 }
-.recipe-image {
-    margin: 0 auto;
-}
+ 
 
+/*PopUp adjustments */
 
-/* Animation for recipes */
-.recipe-open{
-	position: fixed;
-    background: #fff;
-	transition: 0.5s; 
-}
-.recipe-open .recipe-icons, .recipe-open .recipe-desc{
-	display:block;
-	transition: 0.5s; 
-}
-.recipe-open .recipe-image{
-	 margin: 0;
-	transition: 0.5s; 
+#popup .recipe-image{
+	    max-height: 250px;
 }
