@@ -189,8 +189,10 @@
 /* Mobile Design */
 @media (max-width: 48em) {
 	#popup.active{
-		position: relative;
-		top: auto;
+		position: absolute;
+		top: 10px;
+		left: 3%;
+		transform: none;
 		width: 90%;
 		padding: 30px 7px 20px;
 	}
