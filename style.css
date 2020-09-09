@@ -588,7 +588,8 @@ article.about-page {
 
 
 .movie-poster{
-	width: 80vw;
+    width: 80vw;
+    border-radius: 25px 25px 0 0;
 }
 .movie-title{
     text-align: center;
