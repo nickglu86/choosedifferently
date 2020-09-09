@@ -98,6 +98,9 @@
 .recipe-image img{
 	width: 100%;
 }
+#popup.active .recipe-image img{
+	 margin: -84px 0px;
+}
 .recipe-intro{
 	display: flex;
 	align-items: flex-start;
@@ -224,6 +227,10 @@
 	}
 	#popup.active .recipe-image {
 		width: 90%;
+	}
+	#popup.active .recipe-image img{
+		width: 100%;
+		margin: -44px 0px;
 	}
 	.recipe-ingredients, .recipe-diractions{
 		width: auto;
