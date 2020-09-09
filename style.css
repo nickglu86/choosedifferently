@@ -555,13 +555,12 @@ article.about-page {
 }
 .movie-icon{
 	display: inline-block;
-	margin: 0 0.5vw;
+    margin: 0 2vw;
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 9vw;
-    width: 9vw;
+	height: 10vw;
+    width: 10vw;
 }
-
 .movie-icon.netflix{
 	background-image: url("imgs/netflix-icon.png")
 }
@@ -643,7 +642,8 @@ article.about-page {
 	.movie-icon{
 		height: 40px;
 		width: 40px;
-	}
+        margin: 0 0.45vw;
+    }
 	.movie-title{
 		font-size: 25px;
 	}
