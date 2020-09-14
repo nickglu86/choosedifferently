@@ -145,11 +145,13 @@ li.social-ref a span{
 
 /* Footer */
     footer{
+        position: relative;
+        bottom: 0;
+        width: 100%;
         padding-top: 45px;
         padding-bottom: 45px;
         margin-top: 60px;
         display: block;
-        position: relative;
         background: #35373C;
         color: rgba(255, 255, 255, 0.7);
         text-align: center;
