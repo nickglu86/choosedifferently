@@ -1,0 +1,25 @@
+https://api.instagram.com/oauth/authorize
+  ?client_id=1168295610222720
+  &redirect_uri=https://choose-differently.com/auth/
+  &scope=user_profile,user_media
+  &response_type=code
+
+
+
+
+AQCRJVgr6oI-B0Nn667gvqNNjVoKmgxnIeTwqCoMBywdzh428yZ6yUB-SS-Q3Z7tJ3YFXRHJS0QpbhjtfsEHmH_JfhXF5AVmLNLZzr1VgolGiBQx7tvW4sXo1Id86QQ4ThZkS5P7nakVERiEy0y-rEkpmr_HN7Gl2DRjeATiBGpGuJk_xUnpFIf1mVwGpKg4WV-yX7RdQ3PJm6Taq5GqfcojhlW-qho_IeSN1MYRZTuqeQ
+
+
+
+curl -X POST  \
+   https://api.instagram.com/oauth/access_token  \
+  -F client_id=1168295610222720  \
+  -F client_secret=407a73c0a10f78d6aea46c9806702edd  \
+  -F grant_type=authorization_code  \
+  -F redirect_uri=https://choose-differently.com/auth/  \
+  -F code=AQCRJVgr6oI-B0Nn667gvqNNjVoKmgxnIeTwqCoMBywdzh428yZ6yUB-SS-Q3Z7tJ3YFXRHJS0QpbhjtfsEHmH_JfhXF5AVmLNLZzr1VgolGiBQx7tvW4sXo1Id86QQ4ThZkS5P7nakVERiEy0y-rEkpmr_HN7Gl2DRjeATiBGpGuJk_xUnpFIf1mVwGpKg4WV-yX7RdQ3PJm6Taq5GqfcojhlW-qho_IeSN1MYRZTuqeQ
+
+
+
+
+IGQVJVX2FUeGs4WjB4SXMyOUZATWDMwamlzSFlpN3VDYnZAaQUdtdHNGNzZA5YlRsendaa3pBSlluOVI1ZAmozZAjNKdGgxZA1FDN0pLS3BSaXdraXhkNTF5dlhIdjNHVlRPeE1UWXU5UXNwaHdkTERZAd1NtTAZDZD

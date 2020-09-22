@@ -4,6 +4,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="style.css?uptodate1">
+		<link rel="stylesheet" type="text/css" href="index-style.css?uptodate1">
     </head>
     <body>
 		<header class="header">
@@ -34,11 +35,25 @@
 				 </li>
 			 </ul>
 		 </header>
+
 		<div class="container">
-			<div class="soon">
-				<h1>Soon... :)</h1>
+			<div class="products"></div>
+			<div class="main"></div>
+			<div class="instafeed">
+				<div class="instagram-profile">
+					<img class="ig-logo" src="imgs/instagram-logo.png">
+					<div class="choose-diff-profile">
+						<img class="ig-profile-icon" src="imgs/ig-profile-icon.jpg">
+						<span class="ig-profile-name">choosedifferently</span>
+					</div>
+
+				</div>
+				<div id="instagram-posts"></div>
 			</div>
+
 		</div>
+
+
 		<footer class="footer">
 			<ul>
 				<li class="social-ref">
@@ -53,7 +68,18 @@
 					</a>
 				 </li>
 			</ul>
-			<small class="copyright">© 2020 Choose Differently. All Rights Reserved</small> 
+			<small class="copyright">&#169; 2020 Choose Differently. All Rights Reserved</small> 
 		</footer>
+		<script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
+		<script type="text/javascript">
+		var userFeed = new Instafeed({
+			get: 'user',
+			target: "instagram-posts",
+			resolution: 'instagram-posts',
+			limit: 15,
+			accessToken: 'IGQVJVX2FUeGs4WjB4SXMyOUZATWDMwamlzSFlpN3VDYnZAaQUdtdHNGNzZA5YlRsendaa3pBSlluOVI1ZAmozZAjNKdGgxZA1FDN0pLS3BSaXdraXhkNTF5dlhIdjNHVlRPeE1UWXU5UXNwaHdkTERZAd1NtTAZDZD'
+		});
+		userFeed.run();
+		</script>
     </body>
 </html>
