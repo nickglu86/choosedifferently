@@ -83,9 +83,7 @@
 				    </div>
 	 
 			</div>
-			<div class="main">
-				<div id="instagram-posts"></div>
-			</div>
+			<div class="main"></div>
 			<div class="instafeed">
 				<div class="instagram-profile">
 					<img class="ig-logo" src="imgs/instagram-logo.png">
@@ -95,7 +93,7 @@
 					</div>
 
 				</div>
-			
+				<div id="instagram-posts"></div>
 			</div>
 
 		</div>
@@ -121,43 +119,13 @@
 		<script type="text/javascript">
 		var userFeed = new Instafeed({
 			get: 'user',
-			accessToken: 'IGQVJVX2FUeGs4WjB4SXMyOUZATWDMwamlzSFlpN3VDYnZAaQUdtdHNGNzZA5YlRsendaa3pBSlluOVI1ZAmozZAjNKdGgxZA1FDN0pLS3BSaXdraXhkNTF5dlhIdjNHVlRPeE1UWXU5UXNwaHdkTERZAd1NtTAZDZD',
 			target: "instagram-posts",
 			resolution: 'thumbnail',
-			template: '<div><a  href="{{link}}"><img class="insta-image" src="{{image}}" /></a><div class="caption" data-caption="{{caption}}"></div></div>',
+			template: '<a class="blabla"  href="{{link}}"><img class="insta-image"  title="{{caption}}" src="{{image}}" /></a>',
 			limit: 15,
-			after: function(){
-				var captions = document.querySelectorAll(".caption"), i;
-				for (i = 0; i < captions.length; ++i) {
-				var dataCaption = captions[i].getAttribute('data-caption');
-					var dataCaption =  dataCaption.replace(/\./g,'<br><br>');
-					var replacedCaption = dataCaption.replace(/\s\s+/g, '<br>')
-					var captionElem  = document.createElement('div');
-					captionElem.className = "caption-elem";
-					captionElem.innerHTML = replacedCaption;
-					captions[i].appendChild(captionElem);
-					captions[i].removeAttribute('data-caption');
-				}
-			}
+			accessToken: 'IGQVJVX2FUeGs4WjB4SXMyOUZATWDMwamlzSFlpN3VDYnZAaQUdtdHNGNzZA5YlRsendaa3pBSlluOVI1ZAmozZAjNKdGgxZA1FDN0pLS3BSaXdraXhkNTF5dlhIdjNHVlRPeE1UWXU5UXNwaHdkTERZAd1NtTAZDZD'
 		});
 		userFeed.run();
-
-		// var caption = document.querySelector(".caption").getAttribute('data-caption');
-		// var replacedCaption = caption.replace(/\s\s+/g, '<br><br>')
-		// var replacedCaption = caption.replace(/:/g, '<br>')
-		// //document.querySelector(".caption").innerHtml = "דדגדגדגדג";
-		// var dom = document.createElement('div');
-		// dom.innerHTML = replacedCaption;
-		// document.querySelector(".caption").appendChild(dom);
-		// var str = caption;
-		// var mapObj = {
-		// cat:"do g",
-		// dog:"goat",
-		// goat:"cat"
-		// };
-		// str = str.replace(/" "|dog|goat/gi, function(matched){
-		// return mapObj[matched];
-		// });
 		</script>
     </body>
 </html>
