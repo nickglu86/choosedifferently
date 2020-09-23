@@ -1,30 +1,38 @@
 /* Main Container */
 .container{
-  max-width: 1400px;
+  max-width: 1650px;
   width: 100%;
   margin: 0 auto;
 	display: flex;
 	justify-content: center;
-  /* background-color: greenyellow; */
+   /* background-color: greenyellow;  */
   min-height: 200px;
 }
 .products{
   width: 312px;
-  /* background-color: hotpink; */
+   /* background-color: hotpink;  */
 }
 .main{
-  width: 750px;
-  /* background-color: gray; */
+  width: 975px;
+  margin: 0 20px 0;
+   /* background-color: gray;  */
 }
-
+.resources{
+  width: 312px;
+  /* background-color: aquamarine; */
+}
 /* Products container */
-.products-category {
+.category {
   padding-left: 50px;
   width: 135px;
-  border-radius: 0 71px;
-  background: linear-gradient(128deg, rgba(255,255,255,1) 0%, rgba(78,214,242,1) 63%, rgba(176,229,240,0.15730042016806722) 100%);
-  color: white;
+  /* border-radius: 0 71px; */
+  background: linear-gradient(128deg, rgba(255,255,255,1) 0%, rgba(78,214,242,1) 3%, rgba(176,229,240,0.15730042016806722) 100%);
+  color: #000000a6;
   margin: 0 auto;
+}
+
+.caption-elem{
+  white-space: pre-wrap;
 }
 
 .front.face{
@@ -43,10 +51,10 @@
   background-position: center;
   background-repeat: no-repeat;
 }
-.gallery-item {
+.products .gallery-item {
   width: 263px;
   height: 253px;
-  margin: 22px auto;
+  margin: 22px auto 60px;
 }
 .face {
   height: 253px;
@@ -72,7 +80,52 @@
   border-radius: 15px;
   height: 625px;
 }
-
+#instagram-posts {
+  margin: 5px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.instagram-post {
+  flex: 1 0 33%;
+  /* display: flex; */
+  /* width: 400px; */
+  max-width: 300px;
+  border-radius: 3px;
+  border: 1px solid #dbdbdb;
+  border: 1px solid rgba(var(--b6a,219,219,219),1);
+  /* padding: 15px 10px; */
+  margin: 10px;
+  max-height: 800px;
+  overflow: hidden;
+}
+.insta-image {
+  max-width: 300px;
+  object-fit: cover;
+  object-position: center;
+  height: 300px;
+  width: 100%;
+}
+.choose-dif-ig {
+  height: 30px;
+  line-height: 30px;
+  display: flex;
+  font-weight: 600;
+  padding: 14px;
+  border-bottom: 1px solid rgba(var(--ce3,239,239,239),1);
+}
+.choose-dif-icon{
+  background-image: url(imgs/ig-profile-icon.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  border-radius: 15px;
+  margin-right: 8px;
+}
+.caption {
+  padding: 10px 12px;
+}
 .instafeed a img{
   width: 100px;
   height: 100px;
@@ -98,4 +151,44 @@ span.ig-profile-name {
 
 #instagram-posts {
   margin: 5px 0 0;
+}
+
+
+/*  Recipes */
+
+.resources-content {
+  margin-top: 40px;
+}
+.resources-content .resource-item{
+  height: auto;
+  margin: 10px 0 40px;
+}
+.resources-content .poster-wrapper{
+  width: 72%;
+  min-height: initial;
+}
+ .movies-desc {
+  /* border-radius: 25px; */
+  width: 72%;
+  margin: 0 auto;
+  line-height: 22px;
+}
+.resources-content .movie-poster {
+  width:100%;
+}
+
+.resources-content .movie-icon {
+  height: 30px;
+  width: 30px;
+  margin: 0 0.15vw;
+}
+.resources-content .movie-title{
+  line-height: 37px;
+  font-size: 22px;
+}
+.resources-content .movies-resources {
+  width: 100%;
+  padding-top: 0;
+  height: 50px;
+   line-height: initial;
 }

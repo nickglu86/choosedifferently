@@ -41,7 +41,7 @@
 
 		<div class="container">
 			<div class="products">
-					<div class="products-category">
+					<div class="category">
 						<h2>Products</h2>
 					</div>
 					<div class="card shadow gallery-item">
@@ -86,16 +86,56 @@
 			<div class="main">
 				<div id="instagram-posts"></div>
 			</div>
-			<div class="instafeed">
-				<div class="instagram-profile">
-					<img class="ig-logo" src="imgs/instagram-logo.png">
-					<div class="choose-diff-profile">
-						<img class="ig-profile-icon" src="imgs/ig-profile-icon.jpg">
-						<span class="ig-profile-name">choosedifferently</span>
-					</div>
-
+			<div class="resources">
+				<div class="category">
+					<h2>Resources</h2>
 				</div>
-			
+				<div class="resources-content">
+					<div class="resource-item">
+						<div class="poster-wrapper"> 
+							<img class="movie-poster" src="movies-posters/forksandknives.jpg" >
+						</div>
+						<div class="movies-desc">
+							<div class="movie-title">Forks over Knifes</div>
+							<div class="movies-resources">
+								<a href="https://www.forksoverknives.com/"><span class="movie-icon forksoverknives"></span></a>	
+								<a href="https://www.netflix.com/title/70185045"><span class="movie-icon netflix"></span></a>
+								<a href="https://www.amazon.com/Forks-Over-Knives-Colin-Campbell/dp/B008Q0AUX8/"><span class="movie-icon amazon"></span></a>
+								<a href="https://itunes.apple.com/us/movie/forks-over-knives/id450997854"><span class="movie-icon itunes"></span></a>
+							</div>
+						</div>
+					</div>
+						<div class="resource-item">
+							<div class="poster-wrapper"> 
+								<img class="movie-poster" src="movies-posters/whatthehealth2.jpg" >
+							</div>
+							<div class="movies-desc">
+								<div class="movie-title">What the Health</div>
+								<div class="movies-resources">
+									<a href="https://www.whatthehealthfilm.com/"><span class="movie-icon whatthehealth"></span></a>
+									<a href="https://vimeo.com/ondemand/whatthehealth"><span class="movie-icon vimeo"></span></a>
+									<a href="https://www.netflix.com/title/80174177"><span class="movie-icon netflix"></span></a>
+									<a href="https://www.amazon.com/What-Health-Kip-Andersen/dp/B08BNR3N4F/"><span class="movie-icon amazon"></span></a>
+									<a href="https://itunes.apple.com/ca/movie/what-the-health/id1520119740"><span class="movie-icon itunes"></span></a>
+								</div>
+							</div>
+						</div>
+						<div class="resource-item">
+							<div class="poster-wrapper">
+								<img class="movie-poster" src="movies-posters/fed_up_poster.jpg" >
+							</div>
+							<div class="movies-desc">
+								<div class="movie-title">Fed UP</div>
+								<div class="movies-resources">
+									<a href="http://fedupmovie.com/"><span class="movie-icon fedup"></span></a>
+									<a href="https://www.youtube.com/watch?v=ceRFvhlcsiY"><span class="movie-icon youtube"></span></a>
+									<a href="https://www.amazon.com/Fed-Up-Michele-Simon/dp/B07R5V6J2N/"><span class="movie-icon amazon"></span></a>
+									<a href="https://itunes.apple.com/ca/movie/fed-up/id1476408651"><span class="movie-icon itunes"></span></a> 
+									
+								</div>
+							</div>
+						</div>	
+				</div>
 			</div>
 
 		</div>
@@ -119,19 +159,22 @@
 		</footer>
 		<script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
 		<script type="text/javascript">
+
 		var userFeed = new Instafeed({
 			get: 'user',
 			accessToken: 'IGQVJVX2FUeGs4WjB4SXMyOUZATWDMwamlzSFlpN3VDYnZAaQUdtdHNGNzZA5YlRsendaa3pBSlluOVI1ZAmozZAjNKdGgxZA1FDN0pLS3BSaXdraXhkNTF5dlhIdjNHVlRPeE1UWXU5UXNwaHdkTERZAd1NtTAZDZD',
 			target: "instagram-posts",
 			resolution: 'thumbnail',
-			template: '<div><a  href="{{link}}"><img class="insta-image" src="{{image}}" /></a><div class="caption" data-caption="{{caption}}"></div></div>',
+			template: '<div class="instagram-post"><div class="choose-dif-ig"><span class="choose-dif-icon"></span>choosedifferently</div><a  href="{{link}}"><img class="insta-image" src="{{image}}" /></a><div class="caption" data-caption="{{caption}}"></div></div>',
 			limit: 15,
+			sortBy: 'most-liked',
 			after: function(){
 				var captions = document.querySelectorAll(".caption"), i;
 				for (i = 0; i < captions.length; ++i) {
 				var dataCaption = captions[i].getAttribute('data-caption');
-					var dataCaption =  dataCaption.replace(/\./g,'<br><br>');
-					var replacedCaption = dataCaption.replace(/\s\s+/g, '<br>')
+				var replacedCaption = dataCaption;
+				//	var dataCaption =  dataCaption.replace(/\./g,'<br>');
+				//	var replacedCaption = dataCaption.replace(/\s\s+/g, '<br><br>')
 					var captionElem  = document.createElement('div');
 					captionElem.className = "caption-elem";
 					captionElem.innerHTML = replacedCaption;
