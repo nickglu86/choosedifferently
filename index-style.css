@@ -60,9 +60,7 @@
   height: 253px;
 }
 /* Main Container for Instagram */
-.insta-image{
-  max-width: 300px;
-}
+
 /* InstaFeed Container */
 
 .instafeed{
@@ -97,6 +95,9 @@
   margin: 10px;
   max-height: 800px;
   overflow: hidden;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }
 .insta-image {
   max-width: 300px;
@@ -125,6 +126,7 @@
 }
 .caption {
   padding: 10px 12px;
+  text-align: left;
 }
 .instafeed a img{
   width: 100px;
@@ -191,4 +193,48 @@ span.ig-profile-name {
   padding-top: 0;
   height: 50px;
    line-height: initial;
+}
+
+@media (max-width: 1665px) {
+  .main {
+    width: 845px;
+  }
+  .instagram-post{
+    max-width: 400px;
+  }
+  .insta-image{
+    max-width: initial;
+  }
+}
+
+@media (max-width: 1320px) {
+  .container {
+    max-width: 1200px;
+  }
+  .instagram-post{
+    flex: 1 0 100%;
+    max-width: initial;
+  }
+  .insta-image{
+    height: initial;
+  }
+}
+
+
+@media (max-width: 48em) {
+
+  .container{
+    flex-direction: column;
+  }
+  .main {
+    width: auto;
+    margin: 65px 8px 0;
+  } 
+  .products, .resources{
+    display: none;
+  }
+  .instagram-post{
+    height: initial;
+    margin: 0;
+  }
 }
