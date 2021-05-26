@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>Choose Differently</title>
+		<meta name="robots" content="index, follow" />
+		<meta name="description" content="Different options on everyday choises">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="style-new.css?uptodate1">
+  
+        <link rel="stylesheet" type="text/css" href="glider/glider.css">
+    </head>
+    <body>
+        <body>
+            <header class="header">
+                <div class="logo-wrapper">
+                    <div class="logo">
+                        <span class="choose">Choose</span> 
+                        <span class="diff">Differently</span>
+                    </div>
+                </div>
+                <input class="menu-btn" type="checkbox" id="menu-btn" />
+                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                <ul class="menu">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/products.html">Products</a></li>
+                    <li><a href="/recipes.html">Recipes</a></li>
+                    <li><a href="/resources.html">Resources</a></li>
+                    <li class="social-ref">
+                        <a href="https://www.facebook.com/Choose-Differently-103493728053313"  target="_blank">
+                           <span class="facebook-icon"> </span>
+                        </a>
+                        <a href="mailto:choosedifferentoptions@gmail.com" target="_blank">
+                            <span class="email-icon"> </span>
+                         </a>
+                        <a href="https://www.instagram.com/choosedifferently/"  target="_blank">
+                           <span class="instagram-icon"> </span>
+                        </a>
+                     </li>
+                 </ul>
+            </header>
+                  
+            <div class="container">
+                <div class="section">
+                    <div class="glider-contain">
+                        <div class="glider">
+                          <div class="slide-1"></div>
+                          <div class="slide-2"></div>
+                          <div class="slide-3"></div>
+                          <div class="slide-4"></div>
+                        </div>
+                      
+                        <button aria-label="Previous" class="glider-prev">«</button>
+                        <button aria-label="Next" class="glider-next">»</button>
+                        <div role="tablist" class="dots"></div>
+                      </div>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <ul>
+                    <li class="social-ref">
+                        <a href="https://www.facebook.com/Choose-Differently-103493728053313"  target="_blank">
+                           <span class="facebook-icon"> </span>
+                        </a>
+                        <a href="mailto:choosedifferentoptions@gmail.com" target="_blank">
+                           <span class="email-icon"> </span>
+                        </a>
+                        <a href="https://www.instagram.com/choosedifferently/"  target="_blank">
+                           <span class="instagram-icon"> </span>
+                        </a>
+                     </li>
+                </ul>
+                <small class="copyright">&#169; 2020 Choose Differently. All Rights Reserved</small> 
+            </footer>
+
+            <script src="glider/glider.js"></script>
+            <script>
+                new Glider(document.querySelector('.glider'), {
+                    slidesToShow: 1,
+                    dots: '#dots',
+                    draggable: true,
+                    arrows: {
+                        prev: '.glider-prev',
+                        next: '.glider-next'
+                    }
+                    });
+            </script>
+    </body>
+    
+</html>
