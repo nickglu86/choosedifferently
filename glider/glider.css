@@ -146,22 +146,26 @@
   }
 
   .slide-3{
-    background-image: linear-gradient(to right, white , transparent 8% , transparent 92%, white 100%), url("../imgs/slider_images/slide-img-1.png");
+    background-image: linear-gradient(to right, white , transparent 8% , transparent 92%, white 100%),
+     url("../imgs/slider_images/slide-img-1.png");
     background-size: cover;
   	background-repeat: no-repeat;
   }
   .slide-4{
-    background-image: linear-gradient(to right, white , transparent 8% , transparent 92%, white 100%), url("../imgs/slider_images/slide-img-2.png");
+    background-image: linear-gradient(to right, white , transparent 8% , transparent 92%, white 100%),
+     url("../imgs/slider_images/slide-img-3.png");
     background-size: cover;
   	background-repeat: no-repeat;
   }
   .slide-1{
-    background-image:  linear-gradient(to right, white , transparent 8% , transparent 92%, white 100%), url("../imgs/slider_images/slide-img-3.png");
+    background-image:  linear-gradient(to right, white , transparent 8% , transparent 92%, white 100%),
+     url("../imgs/slider_images/slide-img-22.jpg");
     background-size: cover;
   	background-repeat: no-repeat;
   }
   .slide-2{
-    background-image: linear-gradient(to right, white , transparent 8% , transparent 92%, white 100%), url("../imgs/slider_images/slide-img-4.png");
+    background-image: linear-gradient(to right, white , transparent 8% , transparent 92%, white 100%),
+     url("../imgs/slider_images/slide-img-4.png");
     background-size: cover;
   	background-repeat: no-repeat;
   }
