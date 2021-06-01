@@ -13,6 +13,10 @@
     src: URL('fonts/Yesteryear-Regular.ttf') format('truetype');
   }
 
+  @font-face {
+    font-family: 'Muli';
+    src: URL('fonts/Muli/Muli.ttf') format('truetype');
+  }
 
 /***************/
 /* GENERAL CSS */
@@ -29,34 +33,75 @@
 
 body {
 	margin: 0;
-    font-family: 'Brush Script MT', cursive;
+    font-family: 'Muli', cursive;
 	/* font-family: 'Droid Serif', serif; */
-    margin-bottom: 300px;
 }
 
 a {
 	color: #000;
 }
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
 .container{
     min-height: 60vh;
 }
 
-.soon{
-    height: 40vh;
-    font-size: 40px;
-    padding: 0;
-    margin: 0;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+/**** MAIN BODY - Desktop **/
+.section{
+    width: 1290px;
+    margin: 20px auto 110px;
+    overflow: hidden;
 }
+.section-title{
+    padding: 0 16%;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+}
+/** Recipes **/
+.title-label h6{
+    color: #ce9f24;
+    font-size: 17px;
+    color: #8d735f;
+    letter-spacing: .05em;
+    font-weight: 400;
+}
+.title-content h3{
+    color: #3d3d3d;
+    font-family: Muli,sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: .05em;
+    line-height: 1.3em;
+}
+.title-content p{
+    color: #696969;
+    font-size: 19px;
+    margin-top: 17px;
+}
+.recipes-gallery {
+    padding: 4.5% 30px 0;
+}
+.recipe {
+    position: relative;
+    float: left;
+    width: 33.3%;
+}
+.rcp-img{
+    width: 400px;
+    height: 400px;
+}
+.rcp-txt{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 0;
+    left: 0;
+    transition: opacity .3s ease-out;
 
-
-
+}
 
 /******************************************/
 /* Mobile  Responsive View - MOBILE FIRST */
@@ -174,7 +219,6 @@ li.social-ref a span{
 
 /* Footer */
     footer{
-        position: fixed;
         bottom: 0;
         width: 100%;
         padding-top: 45px;
@@ -272,53 +316,6 @@ li.social-ref a span{
 	top: 0;
 }
 
-/* Article */
-
-/* Product - Images Cards */
-
-
-@media screen and (max-width: 440px)  { 
-  .gallery-item {
-    flex: 1 0 46%;
-  }
-}
-/* Product - Images Cards END */
-
-
-/** About Page **/
-article.about-page {
-    width: auto;
-}
-.about{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  margin: 50px auto 0;
-  font-size: 17px;
-}
-.about-photo{
-  flex: 0 30%;
-}
-.about-photo img{
-  padding-top: 5px;
-  width: auto;
-  margin: 0 auto;
-  display: block;
-}
-.about-text{
-  flex: 0 70%;
-}
-.break {
-  flex-basis: 100%;
-  height: 0;
-}
-
-.about-text p{
-    margin: 20px 15px;
-    line-height: 23px;
-    letter-spacing: 0.5px;
-    text-align: justify;
-}
 
 /***************************/
 /* Desktop Responsive View */
@@ -366,9 +363,7 @@ article.about-page {
         display: none;
     }
 
-    article{
-        padding: 30px 5px 0;
-    }
+
 
     .choose{
         /* border-bottom: 1px solid #2196f361; */
@@ -378,175 +373,9 @@ article.about-page {
         /* border-top: 1px solid #2196f361; */
     }
 
-    .products-gallery{
-        width: 1000px;
-    }
-    .products-gallery{
-        margin: 0 auto;
-    }
-    article .product-img{
-        height: 283px;
-    }
-    .face {
-        height: 293px;
-    }
-    .gallery-item{
-        height: 293px; 
-    }
-
-    article .product-link{
-       bottom: 50px;
-   }
-   
-    article.about-page{
-        width: 1060px;
-    }
-   .about{
-        margin: 0px auto 0;
-        flex-direction: row;
-    }
-    .about-photo img{
-        width: 100%;
-    }
-    .about-text p{
-        padding: 0 0 0 24px;
-        margin: 0 0 1em;
-    }
-
-}
-
-@media (max-width: 48em) {
-    .gallery-item h2 {
-        font-size: 1em;
-    }
-    .gallery-item p {
-        font-size: 1.1em;
-    }
-    article .product-link {
-        width: calc(100% - 20px)!important;
-         font-size: 0.9em;
-    }
-    /* Test */
-    .products-gallery, .resources-gallery{
-        width: 80vw;
-    }
-    .gallery-item {
-        margin-top: 10%;
-        flex: 1 0 80vw;
-        height: 80vw;
-    }
-    .face {
-        height: 80vw;
-    }
-    article .product-img {
-        height: 80vw;
-    }
+    
 }
 
 
-/** Resources Page **/
-.resources-gallery .gallery-item{
-	height: auto;
-	display: flex;
-	flex-direction: column;
-	margin: 10% 0;
-}
-.movie-icon{
-	display: inline-block;
-    margin: 0 2vw;
-	background-size: cover;
-	background-repeat: no-repeat;
-	height: 10vw;
-    width: 10vw;
-}
-.movie-icon.netflix{
-	background-image: url("imgs/netflix-icon.png")
-}
-.movie-icon.youtube{
-	background-image: url("imgs/youtube-icon.png")
-}
-.movie-icon.amazon{
-	background-image: url("imgs/amazon-icon.jpg")
-}
-.movie-icon.itunes{
-	background-image: url("imgs/itunes-icon.png")
-}
-.movie-icon.vimeo{
-	background-image: url("imgs/vimeo-icon.png")
-}
-.movie-icon.forksoverknives{
-	background-image: url("imgs/forksoverknives-icon.jpg")
-}
-.movie-icon.whatthehealth{
-	background-image: url("imgs/whatthehealth-icon.png")
-}
-.movie-icon.fedup{
-	background-image: url("imgs/fedup-icon.jpg")
-}
-.movie-icon.cowspiracy{
-	background-image: url("imgs/cowspiracy-icon.jpg")
-}
-.movie-icon.gmoomg{
-	background-image: url("imgs/gmoomg-icon.jpg")
-}
-.movie-icon.gamechangers{
-	background-image: url("imgs/gamechangers-icon.jpg")
-}
-.movie-icon.toxicbeauty{
-	background-image: url("imgs/toxicbeauty-icon.jpg")
-}
 
 
-.movie-poster{
-    width: 80vw;
-    border-radius: 25px 25px 0 0;
-}
-.movie-title{
-    text-align: center;
-    font-size: 20px;
-	line-height: 52px;
-    border-bottom: 1px solid #77747470;
-	width: 75%;
-    margin: 0 auto 10px;
-}
-.movies-resources {
-    text-align: center;
-    width: 100%;
-    height: 55px;
-    line-height: 65px;
-    margin: 0 auto 0;
-    border-bottom: 1px solid #0000003d;
-    border-radius: 25px;
-    padding-top: 10px;
-}
-
-@media (min-width: 48em) {
-    .resources-gallery{
-        width: 1200px;
-		margin: 10px auto 0;
-    }
-	.poster-wrapper {
-		width: 300px;
-		margin: 0 auto;
-		min-height: 440px;
-	}
-	.movie-poster{
-		width: 300px;
-		max-height: 430px;
-	}
-	.resources-gallery .gallery-item{
-		margin: 20px 26px 60px;
-	}
-	.movie-icon{
-		height: 40px;
-		width: 40px;
-        margin: 0 0.45vw;
-    }
-	.movie-title{
-		font-size: 25px;
-	}
-	.movies-resources{
-		 width: 90%;
-	}
-	
-}
