@@ -25,18 +25,15 @@
 	/* font-family: 'Righteous', sans-serif;
     font-family: 'Smythe', sans-serif;
     font-family: 'Yesteryear', sans-serif; */
-
- 
-
     /* font-family: 'Abel', sans-serif; */
+    /* font-family: 'Droid Serif', serif; */
+    box-sizing: border-box;
 }
-
 body {
 	margin: 0;
     font-family: 'Muli', cursive;
-	/* font-family: 'Droid Serif', serif; */
+    -webkit-font-smoothing: antialiased;
 }
-
 a {
 	color: #000;
 }
@@ -46,7 +43,6 @@ h1, h2, h3, h4, h5, h6{
 .container{
     min-height: 60vh;
 }
-
 
 /**** MAIN BODY - Desktop **/
 .section{
@@ -60,6 +56,10 @@ h1, h2, h3, h4, h5, h6{
     align-self: center;
     text-align: center;
 }
+.slider{
+    overflow: initial;
+
+}
 /** Recipes **/
 .title-label h6{
     color: #ce9f24;
@@ -69,6 +69,7 @@ h1, h2, h3, h4, h5, h6{
     font-weight: 400;
 }
 .title-content h3{
+    margin-top: 5px;
     color: #3d3d3d;
     font-family: Muli,sans-serif;
     font-size: 30px;
@@ -82,7 +83,7 @@ h1, h2, h3, h4, h5, h6{
     margin-top: 17px;
 }
 .recipes-gallery {
-    padding: 4.5% 30px 0;
+    padding: 4.5% 10px 0;
 }
 .recipe {
     position: relative;
@@ -92,6 +93,14 @@ h1, h2, h3, h4, h5, h6{
 .rcp-img{
     width: 400px;
     height: 400px;
+    position: relative;
+}
+.recipe:hover .rcp-txt{
+    visibility: visible;
+    opacity: 1;
+}
+.recipe:hover .rcp-txt .rcp-title{
+     opacity: 1;
 }
 .rcp-txt{
     position: absolute;
@@ -99,8 +108,31 @@ h1, h2, h3, h4, h5, h6{
     height: 400px;
     top: 0;
     left: 0;
-    transition: opacity .3s ease-out;
-
+    padding: 60px;
+    background-color: #d2daec;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s  ease-out;
+    /* transition: opacity .3s ease-out; */
+    box-sizing: border-box;
+}
+.rcp-label{
+    font-size: 17px;
+    color: #8d735f;
+    letter-spacing: .05em;
+    font-weight: 400;
+}
+.rcp-title{
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: .1em;
+    color: #3d3d3d;
+    transform: translateY(10px);
+    -webkit-transition: all .15s;
+    -o-transition: all .15s;
+    transition: all .15s;
+    opacity: 0;
 }
 
 /******************************************/
