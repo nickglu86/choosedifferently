@@ -52,6 +52,7 @@ h1, h2, h3, h4, h5, h6{
 }
 .section-title{
     padding: 0 16%;
+    margin-bottom: 60px;
     justify-content: center;
     align-self: center;
     text-align: center;
@@ -82,30 +83,40 @@ h1, h2, h3, h4, h5, h6{
     font-size: 19px;
     margin-top: 17px;
 }
-.recipes-gallery {
+
+
+
+/* Products */
+.products-gallery {
     padding: 4.5% 10px 0;
 }
-.recipe {
+.product {
     position: relative;
     float: left;
-    width: 33.3%;
+    width: 292px;
+    margin: 1%;
+    display: flex;
+    overflow: hidden;
 }
-.rcp-img{
-    width: 400px;
-    height: 400px;
+.prd-img{
+    width: auto;
+    height: 280px;
     position: relative;
+    margin: 0 auto;
+    padding: 10%;
+    text-align: center;
 }
-.recipe:hover .rcp-txt{
+.product:hover .prd-txt{
     visibility: visible;
     opacity: 1;
 }
-.recipe:hover .rcp-txt .rcp-title{
+.product:hover .prd-txt .prd-title{
      opacity: 1;
 }
-.rcp-txt{
+.prd-txt{
     position: absolute;
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     top: 0;
     left: 0;
     padding: 60px;
@@ -117,13 +128,13 @@ h1, h2, h3, h4, h5, h6{
     /* transition: opacity .3s ease-out; */
     box-sizing: border-box;
 }
-.rcp-label{
+.prd-label{
     font-size: 17px;
     color: #8d735f;
     letter-spacing: .05em;
     font-weight: 400;
 }
-.rcp-title{
+.prd-title{
     font-size: 20px;
     font-weight: 400;
     letter-spacing: .1em;
@@ -135,6 +146,109 @@ h1, h2, h3, h4, h5, h6{
     opacity: 0;
 }
 
+
+
+.gallery-link{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+
+/* Recepies */
+
+.recepies-gallery {
+    padding: 4.5% 10px 0;
+}
+.recipe {
+    position: relative;
+    float: left;
+    width: 31.3%;
+    margin: 1%;
+}
+.rcp-img-wrp {
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.rcp-img {
+    margin-top: -44px;
+    opacity: 0.7;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+.recipe:hover .rcp-img{
+    opacity: 1;    
+}
+.rcp-txt{
+    text-align: center;
+}
+.rcp-label{
+    font-size: 17px;
+    letter-spacing: .05em;
+    font-weight: 400;
+    color: #ce9f24;
+    position: relative;
+    font-style: italic;
+}
+.rcp-title{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: .1em;
+    color: #3d3d3d;
+    line-height: 1.3em;
+}
+.rcp-title h4 {
+    margin: 1rem 0;
+}
+.rcp-desc{
+    padding: 0 12px;
+    color: #989898;
+}
+
+/* Services */
+.services-content {
+    display: flex;
+    margin: 60px 0;
+}
+a.service-link {
+    width: 25%;
+    margin: 10px 30px 10px;
+    text-align: center;
+    text-decoration: none;
+}
+.service {
+    margin: 10px auto 10px;
+    text-align: center;
+    opacity: 0.6;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+.service:hover{
+    opacity: 1;
+}
+
+.service h2{
+    margin: 15px 0;
+}
+.service .service-desc{
+    color: #696969;
+}
+.service-image img{
+    width: 70px;
+    height: 70px;
+}
 /******************************************/
 /* Mobile  Responsive View - MOBILE FIRST */
 /******************************************/
