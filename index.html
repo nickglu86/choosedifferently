@@ -6,201 +6,358 @@
 		<meta name="description" content="Different options on everyday choises">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="style.css?uptodate1">
-		<link rel="stylesheet" type="text/css" href="index-style.css?uptodate1">
+		<link rel="stylesheet" type="text/css" href="style-new.css?uptodate1">
+  
+        <link rel="stylesheet" type="text/css" href="glider/glider.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
     </head>
     <body>
-		<header class="header">
-			<div class="logo-wrapper">
-				<div class="logo">
-					<span class="choose">Choose</span> 
-					<span class="diff">Differently</span>
-				</div>
-			</div>
-			<input class="menu-btn" type="checkbox" id="menu-btn" />
-			<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-			<ul class="menu">
-				<li><a href="/index.html">Home</a></li>
-				<li><a href="/about.html">About</a></li>
-				<li><a href="/products.html">Products</a></li>
-				<li><a href="/recipes.html">Recipes</a></li>
-				<li><a href="/resources.html">Resources</a></li>
-				<li class="social-ref">
-					<a href="https://www.facebook.com/Choose-Differently-103493728053313"  target="_blank">
-					   <span class="facebook-icon"> </span>
-					</a>
-					<a href="mailto:choosedifferentoptions@gmail.com" target="_blank">
-						<span class="email-icon"> </span>
-					 </a>
-					<a href="https://www.instagram.com/choosedifferently/"  target="_blank">
-					   <span class="instagram-icon"> </span>
-					</a>
-				 </li>
-			 </ul>
-		 </header>
+            <header class="header">
+                <div class="logo-wrapper">
+                    <div class="logo">
+                        <span class="choose">Choose</span> 
+                        <span class="diff">Differently</span>
+                    </div>
+                </div>
+                <input class="menu-btn" type="checkbox" id="menu-btn" />
+                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                <ul class="menu">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/products.html">Products</a></li>
+                    <li><a href="/recipes.html">Recipes</a></li>
+                    <li><a href="/resources.html">Resources</a></li>
+                    <li><a href="/tips-and-tricks.html">Tips & Tricks</a></li>
+                    <li class="social-ref">
+                        <a href="https://www.facebook.com/Choose-Differently-103493728053313"  target="_blank">
+                           <span class="facebook-icon"> </span>
+                        </a>
+                        <a href="mailto:choosedifferentoptions@gmail.com" target="_blank">
+                            <span class="email-icon"> </span>
+                         </a>
+                        <a href="https://www.instagram.com/choosedifferently/"  target="_blank">
+                           <span class="instagram-icon"> </span>
+                        </a>
+                     </li>
+                 </ul>
+            </header>
+                  
+            <div class="container">
+                <div class="section slider">
+                    <div class="glider-contain">
+                        <div class="glider">
+                          <div class="slide-1"></div>
+                          <div class="slide-2"></div>
+                          <div class="slide-3"></div>
+                          <div class="slide-4"></div>
+                        </div>
+                      
+                        <button aria-label="Previous" class="glider-prev"></button>
+                        <button aria-label="Next" class="glider-next"></button>
+                        <div role="tablist" class="dots"></div>
+                      </div>
+                </div>
+                <div class="section" id="services-section">
+                    <div class="section-title">
+                        <div class="title-label">
+                            <h6>All in one</h6>
+                        </div>
+                        <div class="title-content">
+                            <h3>What we offer</h3>
+                            <p> Lorem ipsum dolor sit amet, id eos adhuc justo accusamus, te vix iisque percipitur. Posse mazim his no. Pericula democritum pri ei. Graece vocibus duo ei. Ne vix ferri. </p>
+                        </div>
+                    </div>
+                    <div class="services-content">
+                        <a href="" class="service-link">
+                            <div class="service">
+                                <div class="service-image">
+                                    <img src="icons/products.png" class="">
+                                </div>      
+                                <div class="service-name"> <h2>Products</h2></div>
+                                <div class="service-desc">On out site you can find a lot of healthy products that can change your life</div>                          
+                            </div>
+                        </a> 
+                        <a href="" class="service-link"><div class="service">
+                            <div class="service-image">
+                                <img src="icons/recipes.png" class="">
+                             </div>     
+                            <div class="service-name"><h2>Recepies</h2></div>
+                             <div class="service-desc">Improve your daily dishes by using our recepies</div>                       
+                            </div>
+                        </a>          
+                        <a href="" class="service-link">
+                            <div class="service">
+                                <div class="service-image">
+                                    <img src="icons/resources.png" class="">
+                                </div>   
+                                <div class="service-name"><h2>Resources</h2></div>
+                                <div class="service-desc">Enrich you knowledge by resources we provide: Articles, Movies, Books</div>
+                            
+                            </div>
+                        </a>      
+                        <a href="" class="service-link">
+                            <div class="service">
+                                <div class="service-image">
+                                    <img src="icons/tips-and-tricks.png" class="">
+                                </div>   
+                                <div class="service-name"><h2>Tips & Tricks</h2></div>
+                                <div class="service-desc">There is so many small changes you can do thay will improve your day to day life</div>
+                            </div>
+                            </div>
+                        </a>     
+                </div>
+                <div class="section" id="products-section">
+                    <div class="section-title">
+                        <div class="title-label">
+                            <h6>Amazing</h6>
+                        </div>
+                        <div class="title-content">
+                            <h3>Healthy Products</h3>
+                            <p> Lorem ipsum dolor sit amet, id eos adhuc justo accusamus, te vix iisque percipitur. Posse mazim his no. Pericula democritum pri ei. Graece vocibus duo ei. Ne vix ferri. </p>
+                        </div>
+                    </div>
+                    <div class="products-gallery">
+                        <div class="product">
+                            <img class="prd-img" src="product-images/banza.png">
+                            <div class="prd-txt"> 
+                                <div class="prd-label">
+                                    <h6>Non Gluten Products</h6>
+                                </div>
+                                <div class="prd-title">
+                                    <h4> Pasta </h4>
+                                </div>
+                            </div>
+                            <a href="" class="gallery-link"></a>
+                        </div>
+                        <div class="product">
+                            <img class="prd-img" src="product-images/simplemills.png">
+                            <div class="prd-txt"> 
+                                <div class="prd-label">
+                                    <h6>Healthy Snack</h6>
+                                </div>
+                                <div class="prd-title">
+                                    <h4>Crackers</h4>
+                                </div>
+                            </div>
+                            <a href="" class="gallery-link"></a>
+                        </div>
+                        <div class="product">
+                            <img class="prd-img" src="product-images/now-foods.png">
+                            <div class="prd-txt"> 
+                                <div class="prd-label">
+                                    <h6>Flours</h6>
+                                </div>
+                                <div class="prd-title">
+                                    <h4>Almond Flour </h4>
+                                </div>
+                            </div>
+                            <a href="" class="gallery-link"></a>
+                        </div>
+                        <div class="product">
+                            <img class="prd-img" src="product-images/hello.png">
+                            <div class="prd-txt"> 
+                                <div class="prd-label">
+                                    <h6> Bath and Body Products</h6>
+                                </div>
+                                <div class="prd-title">
+                                    <h4>Mouthwash</h4>
+                                </div>
+                            </div>
+                            <a href="" class="gallery-link"></a>
+                        </div>
+                        <div class="product">
+                            <img class="prd-img" src="product-images/follow-your-heart.png">
+                            <div class="prd-txt"> 
+                                <div class="prd-label">
+                                    <h6>Organic Products</h6>
+                                </div>
+                                <div class="prd-title">
+                                    <h4> Vegas Ceasar</h4>
+                                </div>
+                            </div>
+                            <a href="" class="gallery-link"></a>
+                        </div>
+                        <div class="product">
+                            <img class="prd-img" src="product-images/ancient-nutrition.png">
+                            <div class="prd-txt"> 
+                                <div class="prd-label">
+                                    <h6>Food Adbles</h6>
+                                </div>
+                                <div class="prd-title">
+                                    <h4>Multi Collagen Protein</h4>
+                                </div>
+                            </div>
+                            <a href="" class="gallery-link"></a>
+                        </div>
+                        <div class="product">
+                            <img class="prd-img" src="product-images/barney.png">
+                            <div class="prd-txt"> 
+                                <div class="prd-label">
+                                    <h6>Snack</h6>
+                                </div>
+                                <div class="prd-title">
+                                    <h4>Almond Butter </h4>
+                                </div>
+                            </div>
+                            <a href="" class="gallery-link"></a>
+                        </div>
+                        <div class="product">
+                            <img class="prd-img" src="product-images/four-sagmatic.png">
+                            <div class="prd-txt"> 
+                                <div class="prd-label">
+                                    <h6> Morning Products</h6>
+                                </div>
+                                <div class="prd-title">
+                                    <h4>Coffe</h4>
+                                </div>
+                            </div>
+                            <a href="" class="gallery-link"></a>
+                        </div>
+                    </div>
+                 </div>
+                <div class="section" id="recepies-section">
+                    <div class="section-title">
+                        <div class="title-label">
+                            <h6>Tasty</h6>
+                        </div>
+                        <div class="title-content">
+                            <h3>Best Recepies</h3>
+                            <p> Lorem ipsum dolor sit amet, id eos adhuc justo accusamus, te vix iisque percipitur. Posse mazim his no. Pericula democritum pri ei. Graece vocibus duo ei. Ne vix ferri. </p>
+                        </div>
+                    </div>
+                    <div class="recipes-gallery">
+                        <div class="recipe">
+                            <div class="rcp-img-wrp">
+                                <img class="rcp-img" src="recipes-images/recipe-4.jpg">
+                            </div>
+                            <div class="rcp-txt"> 
+                                <div class="rcp-label">
+                                    <h6>Vegtables</h6>
+                                </div>
+                                <div class="rcp-title">
+                                    <h4>Vegtables Bowl </h4>
+                                </div>
+                                <div class="rcp-desc">
+                                    <p> Nec ridens intellegam interesset te. Iisque postulant ad vis. Aperiam denique eloquentiam nec ea, pro an agam mundi oportere. </p>
+                                </div>
+                            </div>
+                            <a href="" class="gallery-link"></a>
+                        </div>
+                        <div class="recipe">
+                            <div class="rcp-img-wrp">
+                                <img class="rcp-img" src="recipes-images/recipe-5.jpg">
+                            </div>
+                            <div class="rcp-txt"> 
+                                <div class="rcp-label">
+                                    <h6>Soups</h6>
+                                </div>
+                                <div class="rcp-title">
+                                    <h4> Nuddeles Soup </h4>
+                                </div>
+                                <div class="rcp-desc">
+                                    <p>Nec ridens intellegam interesset te. Iisque postulant ad vis. Aperiam denique eloquentiam nec ea, pro an agam mundi oportere.  </p>
+                                </div>
+                            </div>
+                            <a href="" class="gallery-link"></a>
+                        </div>
+                        <div class="recipe">
+                            <div class="rcp-img-wrp">
+                                <img class="rcp-img" src="recipes-images/recipe-6.jpg">
+                            </div>
+                            <div class="rcp-txt"> 
+                                <div class="rcp-label">
+                                    <h6>Healthy Dishes</h6>
+                                </div>
+                                <div class="rcp-title">
+                                    <h4> Cinoa with Cauliflower </h4>
+                                </div>
+                                <div class="rcp-desc">
+                                    <p>Nec ridens intellegam interesset te. Iisque postulant ad vis. Aperiam denique eloquentiam nec ea, pro an agam mundi oportere.  </p>
+                                </div>
+                            </div>
+                            <a href="" class="gallery-link"></a>
+                        </div>
+                    </div>
 
-		<div class="container">
-			<div class="products">
-					<div class="category">
-						<h2>Products</h2>
-					</div>
-					<div class="card shadow gallery-item">
-					   <div class="front face">
-						  <div class="product-img contain" style="background-image: url('product-images/banza.png')"></div>
-					   </div>
-						  <div class="back face center">
-							 <h2>BANZA</h2>
-							 <p>Gluten Free Pasta made from Chickpeas</p>
-							 <a href="https://www.eatbanza.com/">
-							   <div class="product-link">www.eatbanza.com</div>
-							  </a>
-						  </div>
-					</div>
-					<div class="card shadow gallery-item">
-					   <div class="front face">
-						  <div class="product-img" style="background-image: url('product-images/simplemills.png')"></div>
-					   </div>
-						  <div class="back face center">
-							 <h2>Simple Mills</h2>
-							 <p>Gluten Free Products with Simple and Minimal Ingredients</p>
-							 <a href="https://www.simplemills.com/">
-							 <div class="product-link">www.simplemills.com</div>
-						  </a>
-						  </div>         
-					</div>                       
-				    <div class="card shadow gallery-item">
-					 <div class="front face">
-						<div class="product-img " style="background-image: url('product-images/four-sagmatic.png')"></div>
-					 </div>
-					
-						<div class="back face center">
-						   <h2>Four Sigmatic</h2>
-						   <p>Adaptogen, Mushroom and Elixer Coffees teas and products</p>
-						   <a href="https://us.foursigmatic.com/">
-						   <div class="product-link">us.foursigmatic.com</div>
-						  </a>
-						</div>		
-				    </div>
-	 
-			</div>
-			<div class="main">
-				<div id="instagram-posts"></div>
-			</div>
-			<div class="resources">
-				<div class="category">
-					<h2>Resources</h2>
-				</div>
-				<div class="resources-content">
-					<div class="resource-item">
-						<div class="poster-wrapper"> 
-							<img class="movie-poster" src="movies-posters/forksandknives.jpg" >
-						</div>
-						<div class="movies-desc">
-							<div class="movie-title">Forks over Knifes</div>
-							<div class="movies-resources">
-								<a href="https://www.forksoverknives.com/"><span class="movie-icon forksoverknives"></span></a>	
-								<a href="https://www.netflix.com/title/70185045"><span class="movie-icon netflix"></span></a>
-								<a href="https://www.amazon.com/Forks-Over-Knives-Colin-Campbell/dp/B008Q0AUX8/"><span class="movie-icon amazon"></span></a>
-								<a href="https://itunes.apple.com/us/movie/forks-over-knives/id450997854"><span class="movie-icon itunes"></span></a>
-							</div>
-						</div>
-					</div>
-						<div class="resource-item">
-							<div class="poster-wrapper"> 
-								<img class="movie-poster" src="movies-posters/whatthehealth2.jpg" >
-							</div>
-							<div class="movies-desc">
-								<div class="movie-title">What the Health</div>
-								<div class="movies-resources">
-									<a href="https://www.whatthehealthfilm.com/"><span class="movie-icon whatthehealth"></span></a>
-									<a href="https://vimeo.com/ondemand/whatthehealth"><span class="movie-icon vimeo"></span></a>
-									<a href="https://www.netflix.com/title/80174177"><span class="movie-icon netflix"></span></a>
-									<a href="https://www.amazon.com/What-Health-Kip-Andersen/dp/B08BNR3N4F/"><span class="movie-icon amazon"></span></a>
-									<a href="https://itunes.apple.com/ca/movie/what-the-health/id1520119740"><span class="movie-icon itunes"></span></a>
-								</div>
-							</div>
-						</div>
-						<div class="resource-item">
-							<div class="poster-wrapper">
-								<img class="movie-poster" src="movies-posters/fed_up_poster.jpg" >
-							</div>
-							<div class="movies-desc">
-								<div class="movie-title">Fed UP</div>
-								<div class="movies-resources">
-									<a href="http://fedupmovie.com/"><span class="movie-icon fedup"></span></a>
-									<a href="https://www.youtube.com/watch?v=ceRFvhlcsiY"><span class="movie-icon youtube"></span></a>
-									<a href="https://www.amazon.com/Fed-Up-Michele-Simon/dp/B07R5V6J2N/"><span class="movie-icon amazon"></span></a>
-									<a href="https://itunes.apple.com/ca/movie/fed-up/id1476408651"><span class="movie-icon itunes"></span></a> 
-									
-								</div>
-							</div>
-						</div>	
-				</div>
-			</div>
+                </div>
+                <div class="section" id="contact-section">
+                    <form method="POST" action="mail_form.php" id="contact-form">
+                        <h2>Contact us</h2>
+                        <p><input type="text" class="form-control error" name="name" id="name" placeholder="Name" aria-invalid="true"></p>
+                        <p><input type="email" class="form-control" name="email" id="email" placeholder="Email"></p>
+                        <p><textarea name="message" class="form-control" id="message" cols="30" rows="6" placeholder="Message"></textarea></p>
+                        
+                        <p><input type="submit" value="Send" /></p>
+                        </form>
+                </div>
 
-		</div>
+          </div>
+            <footer class="footer">
+                <ul>
+                    <li class="social-ref">
+                        <a href="https://www.facebook.com/Choose-Differently-103493728053313"  target="_blank">
+                           <span class="facebook-icon"> </span>
+                        </a>
+                        <a href="mailto:choosedifferentoptions@gmail.com" target="_blank">
+                           <span class="email-icon"> </span>
+                        </a>
+                        <a href="https://www.instagram.com/choosedifferently/"  target="_blank">
+                           <span class="instagram-icon"> </span>
+                        </a>
+                     </li>
+                </ul>
+                <small class="copyright">&#169; 2020-2021 Choose Differently. All Rights Reserved</small> 
+            </footer>
 
+            <script src="glider/glider.js"></script>
+            <script>
+                new Glider(document.querySelector('.glider'), {
+                    slidesToShow: 1,
+                    dots: '#dots',
+                    draggable: true,
+                    arrows: {
+                        prev: '.glider-prev',
+                        next: '.glider-next'
+                    }
+                    });
+                    
+                 /*Contatct form Validation */
+                 const constraints = {
+                        name: {
+                            presence: { allowEmpty: false }
+                        },
+                        email: {
+                            presence: { allowEmpty: false },
+                            email: true
+                        },
+                        message: {
+                            presence: { allowEmpty: false }
+                        }
+                    };
 
-		<footer class="footer">
-			<ul>
-				<li class="social-ref">
-					<a href="https://www.facebook.com/Choose-Differently-103493728053313"  target="_blank">
-					   <span class="facebook-icon"> </span>
-					</a>
-					<a href="mailto:choosedifferentoptions@gmail.com" target="_blank">
-					   <span class="email-icon"> </span>
-					</a>
-					<a href="https://www.instagram.com/choosedifferently/"  target="_blank">
-					   <span class="instagram-icon"> </span>
-					</a>
-				 </li>
-			</ul>
-			<small class="copyright">&#169; 2020 Choose Differently. All Rights Reserved</small> 
-		</footer>
-		<script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
-		<script type="text/javascript">
+                    const form = document.getElementById('contact-form');
 
-		var userFeed = new Instafeed({
-			get: 'user',
-			accessToken: 'IGQVJVX2FUeGs4WjB4SXMyOUZATWDMwamlzSFlpN3VDYnZAaQUdtdHNGNzZA5YlRsendaa3pBSlluOVI1ZAmozZAjNKdGgxZA1FDN0pLS3BSaXdraXhkNTF5dlhIdjNHVlRPeE1UWXU5UXNwaHdkTERZAd1NtTAZDZD',
-			target: "instagram-posts",
-			resolution: 'thumbnail',
-			template: '<div class="instagram-post"><div class="choose-dif-ig"><span class="choose-dif-icon"></span>choosedifferently</div><a  href="{{link}}"><img class="insta-image" src="{{image}}" /></a><div class="caption" data-caption="{{caption}}"></div></div>',
-			limit: 15,
-			sortBy: 'most-liked',
-			after: function(){
-				var captions = document.querySelectorAll(".caption"), i;
-				for (i = 0; i < captions.length; ++i) {
-				var dataCaption = captions[i].getAttribute('data-caption');
-				var replacedCaption = dataCaption;
-				//	var dataCaption =  dataCaption.replace(/\./g,'<br>');
-				//	var replacedCaption = dataCaption.replace(/\s\s+/g, '<br><br>')
-					var captionElem  = document.createElement('div');
-					captionElem.className = "caption-elem";
-					captionElem.innerHTML = replacedCaption;
-					captions[i].appendChild(captionElem);
-					captions[i].removeAttribute('data-caption');
-				}
-			}
-		});
-		userFeed.run();
+                    form.addEventListener('submit', function (event) {
+                        const formValues = {
+                            name: form.elements.name.value,
+                            email: form.elements.email.value,
+                            message: form.elements.message.value
+                        };
 
-		// var caption = document.querySelector(".caption").getAttribute('data-caption');
-		// var replacedCaption = caption.replace(/\s\s+/g, '<br><br>')
-		// var replacedCaption = caption.replace(/:/g, '<br>')
-		// //document.querySelector(".caption").innerHtml = "דדגדגדגדג";
-		// var dom = document.createElement('div');
-		// dom.innerHTML = replacedCaption;
-		// document.querySelector(".caption").appendChild(dom);
-		// var str = caption;
-		// var mapObj = {
-		// cat:"do g",
-		// dog:"goat",
-		// goat:"cat"
-		// };
-		// str = str.replace(/" "|dog|goat/gi, function(matched){
-		// return mapObj[matched];
-		// });
-		</script>
+                        const errors = validate(formValues, constraints);
+
+                        if (errors) {
+                        event.preventDefault();
+                        const errorMessage = Object
+                            .values(errors)
+                            .map(function (fieldValues) { return fieldValues.join(', ')})
+                            .join("\n");
+
+                        alert(errorMessage);
+                        }
+                    }, false);
+
+            </script>
     </body>
+    
 </html>

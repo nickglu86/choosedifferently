@@ -463,6 +463,21 @@ li.social-ref a span{
 }
 
 
+.form-control {
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255,.2);
+    padding: 0;
+    margin-bottom: 1rem;
+    height: 52px;
+    background: transparent;
+    color: rgba(255,255,255,.8)!important;
+    transition: border-color .15s ease-in-out , box-shadow .15s ease-in-out , -webkit-box-shadow .15s ease-in-out;
+}
+input.form-control:focus{
+    border:none;
+    outline: none;
+}
+
 /***************************/
 /* Desktop Responsive View */
 /***************************/
