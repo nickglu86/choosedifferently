@@ -57,9 +57,50 @@ h1, h2, h3, h4, h5, h6{
     align-self: center;
     text-align: center;
 }
+
+
+/* First Section Slider  */
+
 .slider{
     overflow: initial;
+}
 
+
+
+/* Services */
+.services-content {
+    display: flex;
+    margin: 60px 0;
+}
+a.service-link {
+    width: 25%;
+    margin: 10px 30px 10px;
+    text-align: center;
+    text-decoration: none;
+}
+.service {
+    margin: 10px auto 10px;
+    text-align: center;
+    opacity: 0.6;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+.service:hover{
+    opacity: 1;
+}
+
+.service h2{
+    margin: 15px 0;
+}
+.service .service-desc{
+    color: #696969;
+}
+.service-image img{
+    width: 70px;
+    height: 70px;
 }
 /** Recipes **/
 .title-label h6{
@@ -214,41 +255,6 @@ h1, h2, h3, h4, h5, h6{
     color: #989898;
 }
 
-/* Services */
-.services-content {
-    display: flex;
-    margin: 60px 0;
-}
-a.service-link {
-    width: 25%;
-    margin: 10px 30px 10px;
-    text-align: center;
-    text-decoration: none;
-}
-.service {
-    margin: 10px auto 10px;
-    text-align: center;
-    opacity: 0.6;
-    -webkit-transition: opacity 0.5s ease-in-out;
-    -moz-transition: opacity 0.5s ease-in-out;
-    -ms-transition: opacity 0.5s ease-in-out;
-    -o-transition: opacity 0.5s ease-in-out;
-    transition: opacity 0.5s ease-in-out;
-}
-.service:hover{
-    opacity: 1;
-}
-
-.service h2{
-    margin: 15px 0;
-}
-.service .service-desc{
-    color: #696969;
-}
-.service-image img{
-    width: 70px;
-    height: 70px;
-}
 
 /* Get in Touch - Contact FOrm */
 
@@ -268,6 +274,7 @@ a.service-link {
 }
 .form-flyer{
     background-color: #e4f3eb;
+    background-color: #bcbcbc21;
     margin-top: -20px;
     margin-bottom: -20px;
     padding: 42px 30px;
@@ -318,6 +325,7 @@ input.form-control:focus, textarea:focus {
     -o-transition: 0.3s;
     transition: 0.3s;
     background: #e4f3eb;
+    background-color: #bcbcbc21;
 }
 
 /******************************************/
