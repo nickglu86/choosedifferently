@@ -281,14 +281,25 @@
 
                 </div>
                 <div class="section" id="contact-section">
-                    <form method="POST" action="mail_form.php" id="contact-form">
-                        <h2>Contact us</h2>
-                        <p><input type="text" class="form-control error" name="name" id="name" placeholder="Name" aria-invalid="true"></p>
-                        <p><input type="email" class="form-control" name="email" id="email" placeholder="Email"></p>
-                        <p><textarea name="message" class="form-control" id="message" cols="30" rows="6" placeholder="Message"></textarea></p>
-                        
-                        <p><input type="submit" value="Send" /></p>
-                        </form>
+                    <div class="form-wrapper">
+                        <div class="form">
+                            <form method="POST" action="mail_form.php" id="contact-form">
+                                <h2>Get in touch</h2>
+                                <p><input type="text" class="form-control error" name="name" id="name" placeholder="Name" aria-invalid="true"></p>
+                                <p><input type="email" class="form-control" name="email" id="email" placeholder="Email"></p>
+                                <p><textarea name="message" class="form-control" id="message" cols="45" rows="6" placeholder="Message"></textarea></p>
+                                
+                                <p><input class="submit" type="submit" value="Send Message" /></p>
+                            </form>
+                        </div>
+                        <div class="form-flyer">
+                            <h2>Contact Us</h2>
+                            <p><label class="lbl-title">Location:</label ><label class="lbl-cntnt">Tel-Aviv / Los-Angeles</label></p>
+                            <p><label class="lbl-title">Email:</label ><label class="lbl-cntnt">choosedifferentoptions@gmail.com</label></p>
+                            <p><label class="lbl-title">Website:</label ><label class="lbl-cntnt">https://choose-differently.com/</label></p>
+                        </div>
+                    </div>
+
                 </div>
 
           </div>
