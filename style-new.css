@@ -40,13 +40,11 @@ a {
 h1, h2, h3, h4, h5, h6{
     margin: 0;
 }
-.container{
-    min-height: 60vh;
-}
 
 /**** MAIN BODY - Desktop **/
 .section{
-    width: 1290px;
+    max-width: 1290px;
+    width: 100%;
     margin: 20px auto 110px;
     overflow: hidden;
 }
@@ -365,6 +363,7 @@ input.form-control:focus, textarea:focus {
 	position: fixed;
 	width: 100%;
 	z-index: 3;
+    top: 0;
 }
 
 .header ul,
@@ -498,7 +497,7 @@ li.social-ref a span{
 }
 
 .header .menu-btn:checked~.menu {
-	max-height: 440px;
+    max-height: 709px;
 }
 
 .header .menu-btn:checked~.menu-icon .navicon {
@@ -546,7 +545,8 @@ li.social-ref a span{
 /***************************/
 /* Desktop Responsive View */
 /***************************/
-@media (min-width: 48em) {
+
+@media (min-width: 1000px) {
 
     .header .logo{
         font-size: 3.7em;
@@ -602,6 +602,57 @@ li.social-ref a span{
     
 }
 
+@media (max-width: 928px) {
 
-
-
+    .services-content {
+      flex-direction: column;
+    }
+    a.service-link {
+      width: 100%;
+      max-width: 300px;
+      margin: 25px auto 25px;
+    }
+    
+    .product {
+      width: 48%;
+    }
+    .recipe {
+      position: relative;
+      float: none;
+      width: 100%;
+      margin: 1%;
+      max-width: 400px;
+      margin: 60px auto;
+    }
+    .form, .form-flyer{
+      width: 100%;
+      padding-top: 50px;
+    }
+    .form-wrapper {
+      width: 100%;
+      max-width: 400px;
+      flex-direction: column-reverse;
+    }
+  }
+  
+  @media (max-width: 720px) {  
+    .product {
+      width: 100%;
+    }
+    .prd-img {
+        padding: 6%;
+    }
+    .product:nth-child(5), .product:nth-child(6), .product:nth-child(7), .product:nth-child(8) {
+       display: none;
+      }
+  }
+  @media (max-width: 440px){
+    .form-wrapper {
+        max-width: 95%;
+    }
+    .lbl-cntnt {
+        display: block;
+        margin-top: 10px;
+    }
+  }
+  
