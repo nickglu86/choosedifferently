@@ -1,19 +1,4 @@
-@font-face {
-    font-family: 'Righteous';
-    src: URL('fonts/Righteous-Regular.ttf') format('truetype');
-  }
-
-  @font-face {
-    font-family: 'Smythe';
-    src: URL('fonts/Smythe-Regular.ttf') format('truetype');
-  }
-
-  @font-face {
-    font-family: 'Yesteryear';
-    src: URL('fonts/Yesteryear-Regular.ttf') format('truetype');
-  }
-
-  @font-face {
+ @font-face {
     font-family: 'Muli';
     src: URL('fonts/Muli/Muli.ttf') format('truetype');
   }
@@ -126,6 +111,9 @@ a.service-link {
 
 
 /* Products */
+#products-section .section-title {
+    padding: 0px 15%;
+}
 .products-gallery {
     padding: 4.5% 10px 0;
 }
@@ -435,10 +423,21 @@ li.social-ref a span{
 
 .header .logo {
 	display: block;
-	float: left;
-	font-size: 2em;
-	padding: 10px 20px;
-	text-decoration: none;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    color: #666666;
+}
+.header .logo img {
+    min-width: 250px;
+    padding: 7px 10px 0px;
+    width: 40%;
+    max-width: 400px;
+    float: left;
 }
 
 /* menu */
@@ -548,8 +547,12 @@ li.social-ref a span{
 
 @media (min-width: 1000px) {
 
-    .header .logo{
-        font-size: 3.7em;
+    .header .logo img {
+        min-width: 250px;
+        padding: 7px 10px 0px;
+        width: auto;
+        max-width: none;
+        float: none;
     }
     .header{
         box-shadow: none;
