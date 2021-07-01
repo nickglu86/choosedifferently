@@ -1,19 +1,3 @@
-/* @preserve
-    _____ __ _     __                _
-   / ___// /(_)___/ /___  ____      (_)___
-  / (_ // // // _  // -_)/ __/_    / /(_-<
-  \___//_//_/ \_,_/ \__//_/  (_)__/ //___/
-                              |___/
-
-  Version: 1.7.4
-  Author: Nick Piscitelli (pickykneee)
-  Website: https://nickpiscitelli.com
-  Documentation: http://nickpiscitelli.github.io/Glider.js
-  License: MIT License
-  Release Date: October 25th, 2018
-
-*/
-
 /* global define */
 
 (function (factory) {
@@ -58,7 +42,7 @@
       // set defaults
       _.animate_id = _.page = _.slide = 0
       _.arrows = {}
-  
+      _.lazy = false;
       // preserve original options to
       // extend breakpoint settings
       _._opt = _.opt
@@ -175,6 +159,7 @@
           e.stopPropagation()
           _.mouseDown = e.clientX
           _.ele.classList.add('drag')
+          _.lazyLoad();
         },
         mousemove: _.mouse,
         click: function (e) {
@@ -369,6 +354,8 @@
       var originalSlide = slide
       ++_.animate_id
   
+      _.lazyLoad();
+
       if (dot === true) {
         slide = slide * _.containerWidth
         slide = Math.round(slide / _.itemWidth) * _.itemWidth
@@ -570,6 +557,17 @@
         eventHandler(k, args[k])
       })
     }
+
+    gliderPrototype.lazyLoad =  function() {     
+          if (!this.lazy) {
+              this.lazy = true;
+              var lazyElemsColl = document.getElementsByClassName("lazy");
+              var lazyElemsArr = [].slice.call(lazyElemsColl);
+              Array.prototype.forEach.call(lazyElemsArr , function(el) {
+                el.classList.remove('lazy')
+            });
+      };
+  };
   
     return Glider
   })

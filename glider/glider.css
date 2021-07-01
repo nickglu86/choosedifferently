@@ -149,6 +149,23 @@
     }
   }
 
+  .lazy.slide-2, 
+  .lazy.slide-3,
+  .lazy.slide-4{
+    background-image: none;
+  }
+  .slide-1{
+    background-image: linear-gradient(to right, white , transparent 30% , transparent 92%, white 100%),
+    url("../imgs/slider_images/slide-img-1-mobile.jpg");
+    background-size: cover;
+  	background-repeat: no-repeat;
+  }
+  .slide-2{
+    background-image: linear-gradient(to right, white , transparent 8% , transparent 92%, white 100%),
+     url("../imgs/slider_images/slide-img-3.jpg");
+    background-size: cover;
+  	background-repeat: no-repeat;
+  }
   .slide-3{
     background-image: linear-gradient(to right, white , transparent 8% , transparent 92%, white 100%),
      url("../imgs/slider_images/slide-img-1.jpg");
@@ -156,20 +173,9 @@
   	background-repeat: no-repeat;
   }
   .slide-4{
-    background-image: linear-gradient(to right, white , transparent 8% , transparent 92%, white 100%),
-     url("../imgs/slider_images/slide-img-3.jpg");
-    background-size: cover;
-  	background-repeat: no-repeat;
-  }
-  .slide-1{
     background-image:  linear-gradient(to right, white , transparent 8% , transparent 92%, white 100%),
-     url("../imgs/slider_images/slide-img-22.jpg");
-    background-size: cover;
-  	background-repeat: no-repeat;
-  }
-  .slide-2{
-    background-image: linear-gradient(to right, white , transparent 8% , transparent 92%, white 100%),
-     url("../imgs/slider_images/slide-img-4.jpg");
+    url("../imgs/slider_images/slide-img-22.jpg");
+
     background-size: cover;
   	background-repeat: no-repeat;
   }
@@ -189,19 +195,19 @@
       max-width: 100% !important;
   }
 }
-@media (max-width: 928px) {
+/* @media (max-width: 928px) {
   .slide-4{
     background-image:  linear-gradient(to right, white , transparent 8% , transparent 92%, white 100%),
-     url("../imgs/slider_images/slide-img-22.jpg");
+     url("../imgs/slider_images/slide-img-2-mobile.jpg");
   }
   .slide-1{
      background-image: linear-gradient(to right, white , transparent 8% , transparent 92%, white 100%),
-     url("../imgs/slider_images/slide-img-3.jpg");
+     url("../imgs/slider_images/slide-img-1-mobile.jpg");
   }
-}
+} */
 
 @media (max-width: 720px) {  
-  .glider-next,  .glider-next{
+  .glider-next,  .glider-prev{
     display: none;
   }
 }
