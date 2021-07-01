@@ -182,9 +182,9 @@
 
 
   @media (max-width: 1480px) {
-    .slide-1 {
+    /* .slide-1 {
         background-image: linear-gradient(to right, white , transparent 15% , transparent 85%, white 100%), url(../imgs/slider_images/slide-img-22.jpg);
-    }   
+    }    */
     .glider-prev {
         left: 0px!important;
     }

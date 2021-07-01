@@ -30,7 +30,7 @@ h1, h2, h3, h4, h5, h6{
 .section{
     max-width: 1290px;
     width: 100%;
-    margin: 20px auto 110px;
+    margin: 40px auto 90px;
     overflow: hidden;
 }
 .section-title{
@@ -115,7 +115,7 @@ a.service-link {
     padding: 0px 15%;
 }
 .products-gallery {
-    padding: 4.5% 10px 0;
+    /* padding: 4.5% 10px 0; */
 }
 .product {
     position: relative;
@@ -642,7 +642,31 @@ li.social-ref a span{
     }
     .product:nth-child(5), .product:nth-child(6), .product:nth-child(7), .product:nth-child(8) {
        display: none;
-      }
+    }
+    .section-title {
+        padding: 0 12%;
+    }
+    .recipe .rcp-img{
+        opacity: 0.95;    
+    }
+    .product{
+        flex-direction: column-reverse;
+    }
+    .prd-txt{
+        position: relative;
+        visibility: visible;
+        opacity: 1;
+        width: 100%;
+        height: 80px;
+        padding: 10px;
+        text-align: center;
+        background-color: #d2daec6b;
+        background: linear-gradient(to right ,transparent 0% , white 10% , #d2daec6b 74%,white 80% , transparent 90%);
+        background: linear-gradient(to right ,white 0% , transparent 8% , #d2daec6b 80%,white 90% , transparent 100%);
+    }
+    .prd-title{
+        opacity: 1;
+    }
   }
   @media (max-width: 440px){
     .form-wrapper {
@@ -651,6 +675,9 @@ li.social-ref a span{
     .lbl-cntnt {
         display: block;
         margin-top: 10px;
+    }
+    .section-title {
+        padding: 0 10%;
     }
   }
   
