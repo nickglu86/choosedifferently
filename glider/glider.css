@@ -102,7 +102,7 @@
     max-width: 1290px !important;
     width: 100%!important;
     background-position: center;
-}
+    opacity: 0.77;
   }
   .glider-hide {
     opacity: 0;
@@ -159,6 +159,7 @@
     url("../imgs/slider_images/slide-img-1-mobile.jpg");
     background-size: cover;
   	background-repeat: no-repeat;
+   
   }
   .slide-2{
     background-image: linear-gradient(to right, white , transparent 8% , transparent 92%, white 100%),
@@ -174,7 +175,7 @@
   }
   .slide-4{
     background-image:  linear-gradient(to right, white , transparent 8% , transparent 92%, white 100%),
-    url("../imgs/slider_images/slide-img-22.jpg");
+    url("../imgs/slider_images/slide-img-4.jpg");
 
     background-size: cover;
   	background-repeat: no-repeat;

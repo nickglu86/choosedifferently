@@ -48,7 +48,18 @@ h1, h2, h3, h4, h5, h6{
     overflow: initial;
 }
 
-
+.welcome-wrapper{
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+    position: absolute;
+    top: 183px;
+}
+.welcome-wrapper img{
+        filter: drop-shadow(9px 10px 5px #222);
+        width: 100%;
+        max-width: 800px;
+}
 
 /* Services */
 .services-content {
