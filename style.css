@@ -416,7 +416,21 @@ article.about-page {
   width: auto;
   margin: 0 auto;
   display: block;
+  border-radius: 10px;
 }
+.afpa-desktop, .afpa-mob{
+    width: 100%;
+    margin: 20px 0 0;
+    height: 200px;
+    background-image: url(imgs/afpa-certificate.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+    .afpa-desktop{
+      display: none;
+    }
+
 .about-text{
   flex: 0 70%;
 }
@@ -431,7 +445,68 @@ article.about-page {
     letter-spacing: 0.5px;
     text-align: justify;
 }
+/* Pricing Part */
+
+.packages-pricing {
+    margin-top: 100px;
+}
+.packages-headlines, .packages-session {
+    display: flex;
+    width: 100%;
+}
+.pckg-h, .ssn-row{
+    width: 29%;
+    position: relative;
+    padding: 0 0 20px;
+}
+.pckg-h{
+    text-align: center;
+    font-weight: 700;
+}
+.pckg-h:first-child, .ssn-row:first-child {
+    width: 13%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.packages ul li{
+    margin: 5px 0;
+}
+
+.mutual-row ul {
+    position: absolute;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.ssn-time {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    color: blue;
+}
+/*.packages-session{
+   padding-bottom: 30px;
+}*/
+.packages-session .ssn-row{
+    border: 1px solid #DEE4E7;
+}
+.ssn-row.mutual-row {
+    border-top: none;
+    border-bottom: none;
+}
+.ssn-row.mutual-row.first-r{
+     border-top: 1px solid #DEE4E7;
+}
+.packages-session:last-child {
+    border-bottom: 1px solid #DEE4E7;
+}
 @media (min-width: 48em){
+
     article.about-page {
         width: 1060px;
     }
@@ -449,6 +524,12 @@ article.about-page {
     .about-text p{
         padding: 0 0 0 24px;
         margin: 0 0 1em;
+    }
+    .afpa-mob{
+      display: none;
+    }
+    .afpa-desktop{
+      display: block;
     }
 }
 
