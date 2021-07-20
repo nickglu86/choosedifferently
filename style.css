@@ -427,9 +427,9 @@ article.about-page {
     background-repeat: no-repeat;
     background-position: center;
 }
-    .afpa-desktop{
+.afpa-desktop{
       display: none;
-    }
+}
 
 .about-text{
   flex: 0 70%;
@@ -450,6 +450,9 @@ article.about-page {
 .packages-pricing {
     margin-top: 100px;
 }
+.packages {
+    margin-top: 40px;
+}
 .packages-headlines, .packages-session {
     display: flex;
     width: 100%;
@@ -457,17 +460,21 @@ article.about-page {
 .pckg-h, .ssn-row{
     width: 29%;
     position: relative;
-    padding: 0 0 20px;
+    padding: 0 0 50px;
 }
 .pckg-h{
     text-align: center;
     font-weight: 700;
+    padding: 0 0 20px;
+    font-size: 21px;
 }
 .pckg-h:first-child, .ssn-row:first-child {
     width: 13%;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 23px;
+    font-style: italic;
 }
 .packages ul li{
     margin: 5px 0;
@@ -484,10 +491,11 @@ article.about-page {
 
 .ssn-time {
     position: absolute;
-    bottom: 0;
+    bottom: 20px;
     text-align: center;
     width: 100%;
     color: blue;
+    font-size: 18px;    
 }
 /*.packages-session{
    padding-bottom: 30px;
@@ -501,6 +509,9 @@ article.about-page {
 }
 .ssn-row.mutual-row.first-r{
      border-top: 1px solid #DEE4E7;
+}
+.ssn-row.mutual-row.first-r ul {
+    padding-right: 10px;
 }
 .packages-session:last-child {
     border-bottom: 1px solid #DEE4E7;
@@ -530,6 +541,12 @@ article.about-page {
     }
     .afpa-desktop{
       display: block;
+    }
+    .packages-pricing{
+        max-width: 1380px;
+        width: 100%;
+        margin: 20px auto 110px;
+        overflow: hidden;
     }
 }
 
@@ -715,6 +732,7 @@ article.about-page {
     font-weight: 400;
     letter-spacing: .05em;
     line-height: 1.3em;
+    text-align: center;
 }
 .title-content p{
     color: #696969;
@@ -787,6 +805,80 @@ article.about-page {
     }
 }
 
+/* Recepies page */
+.recepies-page img.rcp-img {
+    width: 100%;
+}
+
+.gallery-link {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+article.recipe-page {
+    display: flex;
+}
+article.recipe-page  .recipe-img, .recipe-content {
+    width: 50%;
+    overflow: hidden;
+    padding: 10px 20px;
+}
+article.recipe-page  .rcp-img{
+    margin-top: 0;
+    width: 100%;
+    opacity: 1;
+}
+article.recipe-page .rcp-title h4 {
+    margin: 0 0 2rem;
+}
+article.recipe-page  .times{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 20px 0;
+    color: black;
+    opacity: 0.8;
+}
+article.recipe-page  .times *{
+    display: block;
+}
+.p-time, .c-time, .t-time{
+    padding-top: 55px;
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: top;
+}
+.p-time{
+    background-image: url(imgs/prep-icon.png);
+}
+.c-time{
+    background-image: url(imgs/cooking-icon.png);
+}
+.t-time{
+    background-image: url(imgs/serves-icon.png);
+}
+
+.rcp-sub-title{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+    color: #3d3d3d;
+    line-height: 1em;
+}
+@media (max-width: 928px){
+    article.recipe-page {
+        flex-direction: column;
+    }
+    article.recipe-page  .recipe-img, .recipe-content {
+        width: auto;
+    }
+    article.recipe-page  .rcp-desc {
+         padding: 0;
+    }
+}
 
 
 /* Products */
