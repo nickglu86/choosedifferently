@@ -450,12 +450,18 @@ article.about-page {
 .packages-pricing {
     margin-top: 100px;
 }
-.packages {
-    margin-top: 40px;
+.packages-pricing .title-content h3{
+    margin: 5px 0 50px;
+    font-size: 35px;
+    text-shadow: 3px 2px 3px rgb(0 0 0 / 30%);
+}
+.packages, .pricing, .sign-up-elems{
+    margin: 40px 0 ;
 }
 .packages-headlines, .packages-session {
     display: flex;
     width: 100%;
+    justify-content: center;
 }
 .pckg-h, .ssn-row{
     width: 29%;
@@ -494,18 +500,38 @@ article.about-page {
     bottom: 20px;
     text-align: center;
     width: 100%;
-    color: blue;
+    color: rgba(96,102,122,1);
     font-size: 18px;    
 }
+.pricing .pckg-h:first-child, .pricing  .ssn-row:first-child {
+    font-style: normal;
+    width: 25%;
+    font-size: 16px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.pricing .pckg-h, .pricing .ssn-row {
+    width: 25%;
+    text-align: center;
+    font-size: 18px;
+    padding: 25px 0 30px;
+}
+
+.pricing .pckg-h {
+    padding-bottom: 10px;
+}
+
 /*.packages-session{
    padding-bottom: 30px;
 }*/
 .packages-session .ssn-row{
     border: 1px solid #DEE4E7;
 }
+
 .ssn-row.mutual-row {
     border-top: none;
     border-bottom: none;
+    width: 27%;
 }
 .ssn-row.mutual-row.first-r{
      border-top: 1px solid #DEE4E7;
@@ -513,9 +539,60 @@ article.about-page {
 .ssn-row.mutual-row.first-r ul {
     padding-right: 10px;
 }
-.packages-session:last-child {
+.ssn-row ul{
+    padding: 0 10px 0 30px;
+}
+.ssn-row.mutual-row.last{
     border-bottom: 1px solid #DEE4E7;
 }
+
+.sign-up-elems{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.sign-up-elem {
+    width: 300px;
+    height: 100px;
+    flex-direction: column;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin: 0 20px;
+    border-radius: 15px;
+    background: linear-gradient(
+0deg
+, rgba(96,102,122,1) 28%, rgba(19,35,96,1) 100%);
+    color: white;
+    cursor: pointer;
+}
+.su-title{
+    font-size: 30px;
+}
+.su-price{
+    font-size: 26px;
+}
+
+.sign-up-elem a {
+    position: absolute;
+    width: 100%;
+    bottom: -60px;
+}
+.sign-up-elem a button {
+    background: linear-gradient( 
+0deg
+ , rgba(96,102,122,1) 28%, rgba(19,35,96,1) 100%);
+    color: white;
+    line-height: 30px;
+    border-radius: 30px;
+    padding: 2px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
 @media (min-width: 48em){
 
     article.about-page {
@@ -543,7 +620,7 @@ article.about-page {
       display: block;
     }
     .packages-pricing{
-        max-width: 1380px;
+        max-width: 1120px;
         width: 100%;
         margin: 20px auto 110px;
         overflow: hidden;
