@@ -1121,9 +1121,14 @@ article .product-link{
     }
     .sign-up-elem a button {
         font-size: 12px;
+        line-height: initial;
     }
     .pricing .pckg-h, .pricing .ssn-row, .pricing .pckg-h:first-child, .pricing .ssn-row:first-child{
         font-size: 13px;
+    }
+
+    .rcp-img{
+        opacity: 1;
     }
 }
 /* Product - Images Cards END */
