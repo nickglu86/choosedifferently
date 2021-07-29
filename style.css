@@ -462,6 +462,7 @@ article.about-page {
     display: flex;
     width: 100%;
     justify-content: center;
+    font-size: 14px;
 }
 .pckg-h, .ssn-row{
     width: 29%;
@@ -524,6 +525,7 @@ article.about-page {
 /*.packages-session{
    padding-bottom: 30px;
 }*/
+
 .packages-session .ssn-row{
     border: 1px solid #DEE4E7;
 }
@@ -561,11 +563,8 @@ article.about-page {
     justify-content: center;
     margin: 0 20px;
     border-radius: 15px;
-    background: linear-gradient(
-0deg
-, rgba(96,102,122,1) 28%, rgba(19,35,96,1) 100%);
+    background: linear-gradient(0deg, rgba(96,102,122,1) 28%, rgba(19,35,96,1) 100%);
     color: white;
-    cursor: pointer;
 }
 .su-title{
     font-size: 30px;
@@ -580,18 +579,14 @@ article.about-page {
     bottom: -60px;
 }
 .sign-up-elem a button {
-    background: linear-gradient( 
-0deg
- , rgba(96,102,122,1) 28%, rgba(19,35,96,1) 100%);
+    background: linear-gradient( 0deg, rgba(96,102,122,1) 28%, rgba(19,35,96,1) 100%);
     color: white;
     line-height: 30px;
     border-radius: 30px;
     padding: 2px 20px;
     font-size: 20px;
     font-weight: 700;
-    cursor: pointer;
 }
-
 
 @media (min-width: 48em){
 
@@ -612,6 +607,9 @@ article.about-page {
     .about-text p{
         padding: 0 0 0 24px;
         margin: 0 0 1em;
+    }
+    .packages-headlines, .packages-session {
+        font-size: 16px;
     }
     .afpa-mob{
       display: none;
@@ -1087,10 +1085,46 @@ article .product-link{
     text-align: center;
 }
 
-@media screen and (max-width: 440px)  { 
+@media screen and (max-width: 540px)  { 
   .gallery-item {
     flex: 1 0 46%;
   }
+
+  .ssn-row span {
+    transform: rotate(90deg );
+    font-size: 16px;
+    }
+    .mutual-row ul {
+        width: 100%;
+    }
+    .packages-pricing .title-content h3 {
+        font-size: 20px;
+    }
+    .pckg-h {
+        font-size: 12px;
+    }
+    .ssn-time{
+        font-size: 14px;
+    }
+    .ssn-row ul{
+        padding: 0 0 0 22px;
+    }
+    .sign-up-elems {
+        justify-content: space-around;
+    }
+    .sign-up-elem{
+        width: 32%;
+        margin: 0;
+    }
+    .su-title, .su-price{
+        font-size: 20px;
+    }
+    .sign-up-elem a button {
+        font-size: 12px;
+    }
+    .pricing .pckg-h, .pricing .ssn-row, .pricing .pckg-h:first-child, .pricing .ssn-row:first-child{
+        font-size: 13px;
+    }
 }
 /* Product - Images Cards END */
 .products-gallery{
@@ -1135,4 +1169,5 @@ article .product-img{
     article .product-img {
         height: 80vw;
     }
+
 }
