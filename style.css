@@ -819,16 +819,24 @@ article.about-page {
 .recepies-gallery {
     padding: 4.5% 10px 0;
 }
+.recipes-gallery {
+    /* flex-direction: row; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 .recipe {
     position: relative;
-    float: left;
-    width: 31.3%;
+    /* float: left; */
+    /* width: 30%; */
+    flex: 3 0 31%;
     margin: 1%;
 }
 .rcp-img-wrp {
     height: 300px;
     overflow: hidden;
     margin-bottom: 30px;
+    background-color: aliceblue;
 }
 
 .rcp-img {
@@ -869,7 +877,13 @@ article.about-page {
     padding: 0 12px;
     color: #989898;
 }
+a.ig-link{
+    color: #0000EE;
+}
 @media (max-width: 928px){
+    .recipes-gallery {
+        flex-direction: column;
+    }
     .recipe {
         position: relative;
         float: none;
