@@ -630,7 +630,7 @@ article.about-page {
  article#resources{
      max-width: none;
  }
-.products-gallery, .resources-gallery{
+.products-gallery/*, .resources-gallery*/{
 	/* flex-direction: column; */
 	/* padding-bottom: 0px; */
 	/* padding-top: 0px; */
